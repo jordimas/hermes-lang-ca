@@ -1,0 +1,10 @@
+Hermes Catalan language pack
+Copyright (c) 2026 Jordi Mas
+
+Translations and reference strings are derived from Hermes Agent:
+https://github.com/NousResearch/hermes-agent
+Copyright (c) 2025 Nous Research
+Licensed under the MIT License; see LICENSE.
+
+English reference revision: c0ef5af5205dbdc25e9e44acd66873b4bb3503c9
+The language-pack layout follows Hermes' Language Packs documentation.

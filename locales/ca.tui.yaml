@@ -1,0 +1,256 @@
+# Català — partial catalog; missing keys fall back to English.
+billing.autoReload.title: Recàrrega automàtica
+billing.autoReload.turnOff: Desactiva
+billing.buy.title: Afegeix fons
+billing.common.back: Enrere
+billing.common.cancel: Cancel·la
+billing.overview.addFunds: Afegeix fons
+billing.overview.autoReload: Recàrrega automàtica
+chatBits.branding.connected: connectat
+chatBits.branding.connecting: s’està connectant
+chatBits.branding.disabled: desactivat
+chatBits.branding.failed: ha fallat
+chatBits.thinking.statusRunning: en curs
+chatBits.thinking.thinking: S’està pensant
+common.cancel: cancel·la
+common.unknown: desconegut
+common.yes: sí
+composer.interruptHint: Ctrl+C per interrompre…
+composer.placeholders.ask: Pregunta’m el que vulguis…
+composer.placeholders.config: Prova «com funciona el carregador de configuració?»
+composer.placeholders.explain: Prova «explica aquest projecte»
+composer.placeholders.help: Prova «/help» per veure les ordres
+composer.placeholders.lint: Prova «corregeix els errors del linter»
+composer.placeholders.refactor: Prova «refactoritza el mòdul d’autenticació»
+composer.placeholders.test: Prova «escriu una prova per a…»
+connection.authorized.continue: Continua
+connection.field.set: Defineix
+connection.selector.skip: Omet
+connection.verb.connect: Connecta
+connection.verb.enable: Activa
+connection.verb.install: Instal·la
+connection.verb.reconnect: Torna a connectar
+connectors.status.active: actiu
+connectors.status.failed: ha fallat
+connectors.status.inactive: inactiu
+connectors.status.pending: pendent
+content.fortunes.fortune01: una bona refactorització t’ajudarà a veure-ho més clar
+content.fortunes.fortune02: un petit canvi de nom avui evita un gran error demà
+content.fortunes.fortune03: el missatge del teu proper commit serà impecable
+content.fortunes.fortune04: el cas límit que ignores ja el tens resolt al cap
+content.fortunes.fortune05: canvis mínims, calma màxima
+content.fortunes.fortune06: avui és un bon dia per suprimir codi abans de crear abstraccions
+content.fortunes.fortune07: la funció auxiliar que necessites ja és al projecte
+content.fortunes.fortune08: ho publicaràs abans de donar-hi massa voltes
+content.fortunes.fortune09: les proves estan a punt de salvar el teu jo del futur
+content.fortunes.fortune10: fas bé de desconfiar d’aquella branca
+content.legendaryFortunes.legendary01: 'troballa llegendària: correcció d’una línia al primer intent'
+content.legendaryFortunes.legendary02: 'troballa llegendària: totes les proves intermitents passen'
+content.legendaryFortunes.legendary03: 'troballa llegendària: els teus canvis s’expliquen sols'
+content.setup.actions: Accions
+content.setup.exitRow: surt i executa `hermes setup` manualment
+content.setup.footer: Al tauler, la pàgina Models defineix el valor predeterminat del perfil; a l’escriptori, és a Configuració
+  -> Models.
+content.setup.intro: Hermes necessita un proveïdor de models perquè la TUI pugui iniciar una sessió.
+content.setup.modelRow: tria un model (cal una sessió; afegeix primer un proveïdor)
+content.setup.setupRow: executa aquí l’auxiliar de configuració inicial (afegeix un proveïdor)
+content.setup.title: Cal configurar
+content.verbs.browser: s’està navegant
+content.verbs.clarify: s’està preguntant
+content.verbs.create_file: s’està creant
+content.verbs.delegate_task: s’està delegant
+content.verbs.delete_file: s’està suprimint
+content.verbs.execute_code: s’està executant
+content.verbs.image_generate: s’està generant
+content.verbs.list_files: s’està llistant
+content.verbs.memory: s’està recordant
+content.verbs.patch: s’està aplicant un pedaç
+content.verbs.read_file: s’està llegint
+content.verbs.run_command: en curs
+content.verbs.search_code: s’està cercant
+content.verbs.search_files: s’està cercant
+content.verbs.web_extract: s’està extraient
+content.verbs.web_search: s’està cercant
+content.verbs.write_file: s’està escrivint
+help.commands.clear: inicia una sessió nova
+help.commands.copy: copia la selecció o l’últim missatge de l’assistent
+help.commands.details: controla el nivell de detall de la transcripció
+help.commands.help: llista completa d’ordres i dreceres de teclat
+help.commands.quit: surt de Hermes
+help.commands.resume: canvia de sessió activa o reprèn sessions anteriors
+help.commonCommands: Ordres habituals
+help.hotkeys: Dreceres de teclat
+help.quickHelp: '? ajuda ràpida'
+help.quickHelpTail: '  ·  escriu /help per obrir el tauler complet  ·  retrocés per tancar'
+hints.applyCompletion: aplica el suggeriment
+hints.arrows: suggeriments / edició de la cua / historial
+hints.collapseAgents: replega / restaura la previsualització dels agents actius
+hints.continuation: continuació en diverses línies (alternativa)
+hints.copySelection: copia la selecció
+hints.copySelectionForwarded: copia la selecció quan el terminal ho permet
+hints.ctrlC: copia la selecció / esborra l’esborrany / interromp / surt
+hints.ctrlCMac: esborra l’esborrany / interromp / surt
+hints.deleteWord: suprimeix una paraula
+hints.discardDraft: descarta l’esborrany (recupera’l amb ↑)
+hints.exit: surt
+hints.expandAgents: desplega els agents actius (conserva l’esborrany)
+hints.homeEnd: inici / final de línia
+hints.interpolate: insereix la sortida d’una ordre al text (p. ex. «la branca és {!git branch --show-current}»)
+hints.jumpWord: salta una paraula
+hints.killLine: suprimeix fins a l’inici / final de línia (repeteix per abastar més línies)
+hints.lineStartEnd: inici / final de línia
+hints.modelPicker: obre el selector de models (conserva l’esborrany; durant una resposta, s’aplica al torn següent)
+hints.newline: insereix un salt de línia
+hints.openEditor: obre $EDITOR (Alt+G com a alternativa per a VSCode/Cursor)
+hints.paste: enganxa text; /paste adjunta la imatge del porta-retalls
+hints.redraw: torna a dibuixar / repinta
+hints.sessionSwitcher: obre el selector de sessions actives (suprimeix el missatge de la cua mentre l’edites)
+hints.shell: executa una ordre de l’intèrpret (p. ex. !ls, !git status)
+hints.undoRedo: desfés / refés els canvis del text
+hubs.agents.detail.tools: eines
+hubs.agents.diff.duration: durada
+hubs.agents.diff.tools: eines
+hubs.agents.filter.all: tots
+hubs.agents.filter.failed: ha fallat
+hubs.agents.filter.running: en curs
+hubs.agents.hint.pause: posa en pausa
+hubs.agents.hint.resume: reprèn
+hubs.agents.section.files: Fitxers
+hubs.agents.section.output: Sortida
+hubs.agents.sort.status: estat
+hubs.agents.status.completed: completat
+hubs.agents.status.failed: ha fallat
+hubs.agents.status.interrupted: interromput
+hubs.agents.status.running: en curs
+hubs.plugins.status.disabled: desactivat
+hubs.plugins.updating: s’està actualitzant…
+hubs.skills.installing: s’està instal·lant…
+hubs.skills.loadingOne: s’està carregant…
+libText.completion.unavailableMeta: no disponible
+pickers.model.key.saving: s’està desant…
+pickers.model.persist.scopeSession: sessió
+pickers.session.age.today: avui
+pickers.session.age.yesterday: ahir
+pickers.session.row.deleting: s’està suprimint…
+pickers.session.status.idle: inactiu
+pickers.session.status.working: en curs
+prompt.approval.always: Permet-ho sempre
+prompt.approval.deny: Denega
+prompt.approval.moreLines: … {0} línies més (text complet a sobre)
+prompt.approval.once: Permet-ho una vegada
+prompt.approval.session: Permet-ho en aquesta sessió
+prompt.approval.title: ⚠ cal aprovació
+prompt.clarify.confirmAndContinue: confirma i continua
+prompt.clarify.hint: ↑/↓ per seleccionar · Retorn per {0} · Tab/Maj+Tab per canviar de pregunta · Esc/Ctrl+C per cancel·lar
+prompt.clarify.lockAnswer: fixa la resposta
+prompt.clarify.other: Una altra opció (escriu la resposta)
+prompt.clarify.skipped: (omès)
+prompt.clarify.toggle: Espai per alternar
+prompt.clarify.typingHint: Retorn per {0} · Esc per tornar
+prompt.confirm.confirm: Sí
+prompt.confirm.hint: ↑/↓ per seleccionar · Retorn per confirmar · Y/N per triar ràpidament · Esc per cancel·lar
+session.approval.approved: aprovat ({0})
+session.approval.denied: denegat
+session.common.invalidResponse: 'resposta no vàlida: {0}'
+session.handoff.exitedWithCode: hermes {0} ha acabat amb el codi {1}
+session.handoff.launchError: 'error en iniciar Hermes: {0}'
+session.handoff.launching: s’està executant `hermes {0}`…
+session.handoff.stillNoProvider: encara no hi ha cap proveïdor configurat
+session.input.codeSkipped: s’ha omès el codi de verificació de {0}
+session.input.dashboardNewSession: s’està iniciant un xat nou al tauler…
+session.input.failedToOpenEditor: no s’ha pogut obrir l’editor
+session.input.failedToOpenEditorWith: 'no s’ha pogut obrir l’editor: {0}'
+session.input.loginNotSaved: no s’ha desat l’inici de sessió de {0}
+session.input.secretCancelled: s’ha cancel·lat la introducció del secret
+session.input.sudoCancelled: s’ha cancel·lat sudo
+session.input.vaultStaysLocked: '{0} continua blocat'
+session.input.voiceError: 'error de veu: {0}'
+session.input.voiceModeOff: 'veu: el mode està desactivat; activa’l amb /voice on'
+session.input.voiceStillTranscribing: 'veu: encara s’està transcrivint; torna-ho a provar d’aquí a un moment'
+session.input.yoloNeedsSession: yolo necessita una sessió activa
+session.input.yoloOff: yolo desactivat
+session.input.yoloOn: yolo activat
+session.input.yoloToggleFailed: no s’ha pogut canviar l’estat de yolo
+session.lifecycle.failedToSetTitle: 'no s’ha pogut definir el títol de la sessió: {0}'
+session.lifecycle.interruptBeforeSwitch: interromp el torn actual abans de provar de {0}
+session.lifecycle.newLiveSessionStarted: s’ha iniciat una sessió activa nova
+session.lifecycle.sessionTitleSet: 's’ha definit el títol de la sessió: {0}'
+session.lifecycle.switchSessions: canviar de sessió
+session.lifecycle.titleQueuedSuffix: ' (a la cua mentre s’inicialitza la sessió)'
+session.main.clarifyQuestionsOne: '{0} pregunta'
+session.main.clarifyQuestionsOther: '{0} preguntes'
+session.main.failedToStartLiveSession: no s’ha pogut iniciar una sessió activa nova
+session.main.invalidModelSwitchResponse: 'resposta no vàlida: canvi de model'
+session.main.skipped: (omès)
+session.main.voiceOff: veu desactivada
+session.main.voiceOn: veu activada
+session.main.widgetFailedToLoad: 'no s’ha pogut carregar el giny {0}: {1}'
+session.main.widgetLive: el giny /{0} està actiu; escriu /{0} per obrir-lo
+session.main.widgetRemoved: s’ha eliminat el giny /{0} (fitxer suprimit)
+session.request.dangerousCommand: ordre perillosa
+session.status.approvalNeeded: cal aprovació
+session.status.closingSession: s’està tancant la sessió…
+session.status.interrupting: s’està interrompent…
+session.status.reconnecting: s’està tornant a connectar…
+session.status.restarting: s’està reiniciant…
+session.status.resuming: s’està reprenent…
+session.status.saveLogin: desa l’inici de sessió de {0}
+session.status.secretInputNeeded: cal introduir un secret
+session.status.setupRequired: cal configurar
+session.status.setupRunning: s’està configurant…
+session.status.startingAgent: s’està iniciant l’agent…
+session.status.stopped: aturat
+session.status.sudoPasswordNeeded: cal la contrasenya de sudo
+session.status.switchingSession: s’està canviant de sessió…
+session.status.unlockVault: desbloca {0}
+session.status.verificationCode: codi de verificació de {0}
+session.status.waitingForInput: s’està esperant una resposta…
+session.turn.interrupted: interromput
+slashCmd.core.clear.switchSessions: canviar de sessió
+slashCmd.core.copy.copied: s’ha copiat al porta-retalls
+slashCmd.core.details.reset: restableix
+slashCmd.core.history.pageTitle: Historial
+slashCmd.core.logs.pageTitle: Registres
+slashCmd.core.status.pageTitle: Estat
+slashCmd.debug.mem.panelTitle: Memòria
+slashCmd.debug.themeInfo.dark: fosc
+slashCmd.debug.themeInfo.light: clar
+slashCmd.debug.themeInfo.panelTitle: Tema
+slashCmd.ops.agents.stateActive: actiu
+slashCmd.ops.agents.statePaused: en pausa
+slashCmd.ops.rollback.workspaceTarget: espai de treball
+slashCmd.ops.skills.listTitle: Habilitats
+slashCmd.ops.skills.rowCategory: Categoria
+slashCmd.ops.skills.rowName: Nom
+slashCmd.ops.skills.rowPath: Camí
+slashCmd.ops.slashWorker.pluginsTitle: Complements
+slashCmd.ops.slashWorker.skillsTitle: Habilitats
+slashCmd.ops.slashWorker.toolsTitle: Eines
+slashCmd.session.model.cancel: Cancel·la
+slashCmd.session.personality.defaultValue: predeterminat
+slashCmd.session.sessions.busyGuardAction: canviar de sessió
+slashCmd.session.skin.defaultValue: predeterminat
+slashCmd.session.usage.balanceTitle: Saldo
+slashCmd.session.usage.freePlan: Gratuït
+slashCmd.session.usage.usageTitle: Ús
+slashCmd.session.yolo.off: yolo desactivat
+slashCmd.session.yolo.on: yolo activat
+slashCmd.wake.reason.unavailable: no disponible
+slashCmd.wake.reason.unknown: desconegut
+status.compacting: s’està compactant
+status.devCredits: ' (crèdits de desenvolupament)'
+status.fast: ràpid
+status.mcpReloaded: S’ha tornat a carregar MCP després del canvi de configuració
+status.paused: ⏸ en pausa
+status.ready: preparat
+status.resumesWhenSubagentFinishes: ↩ es reprendrà quan acabi el subagent
+status.resumesWhenSubagentsFinish: ↩ es reprendrà quan acabin {0} subagents
+status.running: en curs…
+status.sessionCount: '{0} sessions'
+status.summoning: s’està iniciant Hermes…
+subscription.resultScreen.titleDone: Fet
+subscription.shared.back: Enrere
+subscription.shared.cancel: Cancel·la
+subscription.shared.close: Tanca
+subscription.shared.freePlan: Gratuït
+subscription.stepUp.continue: Continua

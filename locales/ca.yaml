@@ -1,0 +1,213 @@
+# Català — partial catalog; missing keys fall back to English.
+approval.allowed_always: '      ✓ Afegit a la llista de permisos permanents'
+approval.allowed_once: '      ✓ Permès una vegada'
+approval.allowed_session: '      ✓ Permès en aquesta sessió'
+approval.blocklist_message: Aquesta ordre és a la llista de bloqueig incondicional i no es pot aprovar.
+approval.cancelled: '      ✗ Cancel·lat'
+approval.dangerous_header: '⚠️  ORDRE PERILLOSA: {description}'
+approval.denied: '      ✗ Denegat'
+approval.noun.action: l’acció
+approval.noun.code: el codi
+approval.noun.command: l’ordre
+approval.summary.blocked: No es permet executar {noun} en una sessió desatesa; no s’ha executat.
+approval.summary.cancelled: La petició d’aprovació s’ha retirat o no t’ha arribat; no s’ha executat {noun}.
+approval.summary.default: No s’ha executat {noun}.
+approval.summary.denied: Has denegat l’execució de {noun}; no s’ha executat.
+approval.summary.notify_failed: No s’ha pogut lliurar la petició d’aprovació; no s’ha executat {noun}.
+approval.summary.timeout: Cap resposta en {window}; no s’ha executat {noun}.
+approval.timeout: '      ⏱ Cap resposta en {waited}; l’ordre no s’ha executat. Torna-ho a demanar o augmenta el límit: hermes
+  config set approvals.timeout {suggested}'
+approval.window.hour_one: '{count} hora'
+approval.window.hour_other: '{count} hores'
+approval.window.minute_one: '{count} minut'
+approval.window.minute_other: '{count} minuts'
+approval.window.second_one: '{count} segon'
+approval.window.second_other: '{count} segons'
+cli.approval.outcome_deny: denegat
+cli.billing.add_funds: Afegeix fons
+cli.billing.auto_reload: Recàrrega automàtica
+cli.billing.choice_add_funds: Afegeix fons
+cli.billing.choice_auto_reload: Recàrrega automàtica
+cli.billing.choice_back: Enrere
+cli.billing.choice_cancel: Cancel·la
+cli.billing.choice_close: Tanca
+cli.billing.choice_turn_off: Desactiva
+cli.billing.desc_not_now: cancel·la
+cli.billing.plan_free: Gratuït
+cli.commands.cron.next_short: Següent
+cli.commands.reasoning.display_off: desactivat
+cli.commands.snapshot.col_files: Fitxers
+cli.commands.update.choice_cancel: Cancel·la
+cli.config.section_session: Sessió
+cli.config.value_not_set: sense definir
+cli.connect.button_cancel: Cancel·la
+cli.connect.button_connect: Connecta
+cli.connect.button_continue: Continua
+cli.connect.connected: Connectat
+cli.connect.secret_set: Defineix
+cli.gateway_status.enabled: Activat
+cli.help.section_configuration: Configuració
+cli.help.section_exit: Surt
+cli.help.section_session: Sessió
+cli.modal.cancel: Cancel·la
+cli.model.choice_cancel: Cancel·la
+cli.plugins.count_noun_tools: eines
+cli.reload_mcp.choice_cancel: Cancel·la
+cli.session.column_preview: Previsualització
+cli.shared.cancel: Cancel·la
+cli.shared.label_disabled: desactivat
+cli.shared.label_enabled: activat
+cli.shared.label_off: desactivat
+cli.shared.label_on: activat
+cli.shared.label_yes: sí
+cli.shared.unknown: desconegut
+cli.subscription.choice_copy_link: Copia l’enllaç
+cli.tui.approval_deny: Denega
+cli.tui.approval_once: Permet-ho una vegada
+cli.tui.clarify_other_type_answer: Una altra opció (escriu la resposta)
+cli.tui.connection_connect: Connecta
+cli.tui.connection_continue: Continua
+cli.tui.picker_provider_fallback: Proveïdor
+display.cute.cron_listing: s’està llistant
+display.cute.fallback_done: fet
+display.cute.images_extracting: s’està extraient
+display.cute.skills_all: tots
+display.cute.verb.back: enrere
+display.cute.verb.memory: memòria
+display.cute.verb.search: cerca
+display.cute.verb.send: envia
+display.cute.verb.skills: habilitats
+display.review.label.memory: Memòria
+display.review.skill_verb.created: creat
+explainer.file_mutation.failed: ha fallat
+gateway.agents.active_agents: '**Agents actius:** {count}'
+gateway.agents.active_ago: ' · actiu fa {seconds}s'
+gateway.agents.async_jobs: '**Tasques asíncrones de la passarel·la:** {count}'
+gateway.agents.background_delegations: '**Delegacions en segon pla:** {count}'
+gateway.agents.between_turns: entre torns
+gateway.agents.child_row: '  - agent fill {index}: {calls} crides a l’API · {doing}'
+gateway.agents.header: 🤖 **Agents i tasques actius**
+gateway.agents.more: … i {count} més
+gateway.agents.no_progress: ' · sense progrés durant {seconds}s'
+gateway.agents.none: No hi ha cap agent actiu ni cap tasca en curs.
+gateway.agents.quiet_for: ' · sense activitat durant {seconds}s'
+gateway.agents.running_processes: '**Processos en segon pla en curs:** {count}'
+gateway.agents.state_running: en curs
+gateway.agents.state_starting: s’està iniciant
+gateway.agents.this_chat: ' · aquest xat'
+gateway.approval_expired: ⚠️ L’aprovació ha caducat (l’agent ja no espera). Demana a l’agent que ho torni a provar.
+gateway.approve.always_plural: ✅ S’han aprovat les ordres (patró aprovat permanentment) ({count} ordres). L’agent reprèn la
+  feina…
+gateway.approve.always_singular: ✅ S’ha aprovat l’ordre (patró aprovat permanentment). L’agent reprèn la feina…
+gateway.approve.no_pending: No hi ha cap ordre pendent d’aprovació.
+gateway.approve.once_plural: ✅ S’han aprovat les ordres ({count} ordres). L’agent reprèn la feina…
+gateway.approve.once_singular: ✅ S’ha aprovat l’ordre. L’agent reprèn la feina…
+gateway.approve.session_plural: ✅ S’han aprovat les ordres (patró aprovat per a aquesta sessió) ({count} ordres). L’agent
+  reprèn la feina…
+gateway.approve.session_singular: ✅ S’ha aprovat l’ordre (patró aprovat per a aquesta sessió). L’agent reprèn la feina…
+gateway.background.exit_code: sortida {code}
+gateway.background.final_output: "{header}\n\nSortida final:\n```\n{output}\n```"
+gateway.background.last_output: ". Última sortida:\n```\n{tail}\n```"
+gateway.background.no_credentials: ❌ No s’ha pogut iniciar la tasca en segon pla perquè no hi ha cap sessió de model d’IA
+  configurada. Fes servir /login o executa `hermes setup` a la màquina amfitriona.
+gateway.background.no_response: (No s’ha generat cap resposta)
+gateway.background.recent_output: "{header}\n\nSortida recent:\n```\n{output}\n```"
+gateway.background.rerun_hint: "\nDemana’m que la torni a executar o que mostri el registre complet."
+gateway.background.still_running: ⏳ La tasca en segon pla continua en curs
+gateway.background.task_failed: ❌ La tasca en segon pla ha fallat
+gateway.background.task_finished: ✅ La tasca en segon pla ha acabat
+gateway.branch.create_failed: 'No s’ha pogut crear la branca: {error}'
+gateway.branch.db_unavailable: La base de dades de sessions no està disponible.
+gateway.branch.no_conversation: No hi ha cap conversa de la qual crear una branca; envia primer un missatge.
+gateway.branch.switch_failed: S’ha creat la branca, però no s’hi ha pogut canviar.
+gateway.branch.thread_fallback: No s’ha pogut crear cap fil aquí; la branca ha substituït la sessió d’aquest xat.
+gateway.commands.default_desc: Ordre d’habilitat
+gateway.commands.header: 📚 **Ordres** ({total} en total, pàgina {page}/{total_pages})
+gateway.commands.nav_next: següent → `/commands {page}`
+gateway.commands.nav_prev: '`/commands {page}` ← anterior'
+gateway.commands.none: No hi ha cap ordre disponible.
+gateway.commands.out_of_range: _(La pàgina {requested} era fora de l’interval; es mostra la pàgina {page}.)_
+gateway.commands.skill_header: '⚡ **Ordres d’habilitats**:'
+gateway.commands.usage: 'Ús: `/commands [page]`'
+gateway.compress.failed: 'La compressió ha fallat: {error}'
+gateway.compress.focus_line: 'Tema: "{topic}"'
+gateway.compress.no_provider: No hi ha cap proveïdor configurat; no es pot comprimir.
+gateway.compress.not_enough: No hi ha prou conversa per comprimir (calen almenys 4 missatges).
+gateway.compress.nothing_to_do: Encara no hi ha res per comprimir (tota la transcripció continua sent context protegit).
+gateway.config_read_failed: '⚠️ No s’ha pogut llegir config.yaml: {error}'
+gateway.config_save_failed: '⚠️ No s’ha pogut desar la configuració: {error}'
+gateway.context.category.memory: Memòria
+gateway.context.category.skills: Habilitats
+gateway.debug.auto_delete: ⏱ Els textos compartits se suprimiran automàticament d’aquí a 6 hores.
+gateway.debug.full_logs_hint: Per pujar els registres complets, executa `hermes debug share` des de la CLI.
+gateway.debug.header: '**S’ha pujat l’informe de depuració:**'
+gateway.debug.report_label: Informe
+gateway.debug.share_hint: Comparteix aquests enllaços amb l’equip de Hermes per obtenir ajuda.
+gateway.debug.upload_failed: '✗ No s’ha pogut pujar l’informe de depuració: {error}'
+gateway.deny.denied_plural: ❌ S’han denegat les ordres ({count} ordres).
+gateway.deny.denied_reason_plural: '❌ S’han denegat les ordres ({count} ordres). Motiu comunicat a l’agent: "{reason}"'
+gateway.deny.denied_reason_singular: '❌ S’ha denegat l’ordre. Motiu comunicat a l’agent: "{reason}"'
+gateway.deny.denied_singular: ❌ S’ha denegat l’ordre.
+gateway.deny.no_pending: No hi ha cap ordre pendent de denegar.
+gateway.deny.stale: ❌ S’ha denegat l’ordre (l’aprovació havia caducat).
+gateway.draining: ⏳ S’està esperant que acabin {count} agents actius abans de reiniciar…
+gateway.exec_approval.action_deny: Denega
+gateway.exec_approval.default_reason: ordre perillosa
+gateway.fast.status_fast: ràpid
+gateway.goal_cleared: ✓ S’ha esborrat l’objectiu.
+gateway.kanban.wake.completed: completat
+gateway.model.capabilities_label: 'Capacitats: {capabilities}'
+gateway.model.context_label: 'Context: {tokens} tokens'
+gateway.model.cost_label: 'Cost: {cost}'
+gateway.model.current_label: 'Actual: `{model}` amb {provider}'
+gateway.model.current_tag: ' (actual)'
+gateway.model.err_config_not_updated: No s’ha actualitzat config.yaml ({error})
+gateway.model.err_switch_failed: No s’ha pogut canviar al model {model} ({error}); es manté {current}.
+gateway.model.error_prefix: 'Error: {error}'
+gateway.model.max_output_label: 'Sortida màxima: {tokens} tokens'
+gateway.model.more_models_suffix: ' (+{count} més)'
+gateway.model.next_turn_only: '    (només al torn següent; es restableix després d’una resposta)'
+gateway.model.prompt_caching_enabled: 'Memòria cau de les instruccions: activada'
+gateway.model.provider_label: 'Proveïdor: {provider}'
+gateway.model.saved_global: S’ha desat a config.yaml (`--global`)
+gateway.model.session_only_hint: _(només en aquesta sessió; afegeix `--global` per fer-ho permanent)_
+gateway.model.switch_cancelled: 🟡 S’ha cancel·lat el canvi de model. Es manté el model actual ({model}).
+gateway.model.switched: S’ha canviat el model a `{model}`
+gateway.model.usage_persist: '`/model <name> --global` — desa el canvi'
+gateway.model.usage_switch_model: '`/model <name>` — canvia de model'
+gateway.model.usage_switch_provider: '`/model <name> --provider <slug>` — canvia de proveïdor'
+gateway.model.warning_prefix: 'Avís: {warning}'
+gateway.no_active_goal: No hi ha cap objectiu actiu.
+gateway.notify.media_kind.file: fitxer
+gateway.platform.reason_default: en pausa
+gateway.progress.task_status_running: en curs
+gateway.reasoning.display_off: desactivat
+gateway.shared.none_value: cap
+gateway.shared.unknown_value: desconegut
+gateway.steer.target_run: executa
+gateway.topic.system_topic_name: Sistema
+gateway.topic.untitled_session: Sessió sense títol
+gateway.usage.breakdown_cat_memory: Memòria
+gateway.usage.breakdown_cat_skills: Habilitats
+platform.discord.approval.confirm_title: Confirma
+platform.discord.picker.cancel: Cancel·la
+platform.discord.picker.unknown_model: desconegut
+platform.discord.prompt.affirm: Sí
+platform.discord.slash_confirm.cancel: Cancel·la
+platform.discord.slash_confirm.resolved_cancel: Cancel·lat
+platform.feishu.approval.action_session: Sessió
+platform.feishu.update_prompt.word_yes: Sí
+platform.relay.confirm_cancel: Cancel·la
+platform.shared.handoff.default_name: sessió
+platform.shared.unknown: desconegut
+platform.slack.confirm.cancel: Cancel·la
+platform.slack.confirm.default_title: Confirma
+platform.slack.picker.cancel: Cancel·la
+platform.teams.summary.none_item: Cap
+platform.telegram.picker.unknown_model: desconegut
+platform.telegram.prompt.affirm_word: Sí
+platform.whatsapp.clarify_list_button: Tria
+slash.category.configuration: Configuració
+slash.category.exit: Surt
+slash.category.plugins: Complements
+slash.category.session: Sessió

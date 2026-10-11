@@ -1,0 +1,703 @@
+# Català — partial catalog; missing keys fall back to English.
+agents.ageNow: ara
+agents.done: Fet
+agents.failed: Ha fallat
+agents.files: Fitxers
+appTour.capabilities.title: Capacitats
+appTour.messaging.title: Missatgeria
+artifactCard.open: Obre
+artifactPreview.download: Baixa
+artifacts.colLocationFile: Camí
+artifacts.colSession: Sessió
+artifacts.colTitleFile: Nom
+artifacts.copyPath: Copia el camí
+artifacts.itemsFile: fitxers
+artifacts.kindFile: fitxer
+artifacts.tabAll: Tots
+artifacts.tabFiles: Fitxers
+assistant.approval.allowSession: Permet-ho en aquesta sessió
+assistant.approval.alwaysAllow: Permet-ho sempre
+assistant.approval.reconnect: Torna a connectar
+assistant.approval.run: Executa
+assistant.catalogInstall.advanced: Avançat
+assistant.catalogInstall.failed: Ha fallat
+assistant.catalogInstall.install: Instal·la
+assistant.catalogInstall.installed: Instal·lat
+assistant.catalogInstall.installing: S’està instal·lant…
+assistant.catalogInstall.securityHeading: Seguretat
+assistant.catalogInstall.skip: Omet
+assistant.catalogInstall.subdirLabel: Carpeta
+assistant.clarify.other: Una altra opció (escriu la resposta)
+assistant.clarify.skip: Omet
+assistant.mcpSetup.enableAction: Activa
+assistant.mcpSetup.installAction: Instal·la
+assistant.setupChoose.kinds.plugins: Complements
+assistant.setupChoose.kinds.theme: Aparença
+assistant.startChat.open: Obre
+assistant.startChat.retry: Torna-ho a provar
+assistant.startChat.untitled: Xat nou
+assistant.thread.copy: Copia
+assistant.thread.errorDetails: Detalls
+assistant.thread.errorRetry: Torna-ho a provar
+assistant.thread.errorRetryScheduledCancel: Cancel·la
+assistant.thread.refresh: Actualitza
+assistant.thread.reviewChanges: Revisió
+assistant.thread.stop: Atura
+assistant.thread.thinking: S’està pensant
+assistant.tool.copyPath: Copia el camí
+assistant.tool.statusDone: Fet
+boot.failure.back: Enrere
+boot.failure.details: Detalls
+boot.failure.retry: Torna-ho a provar
+commandCenter.actionDone: fet
+commandCenter.actionFailed: ha fallat
+commandCenter.actionRunning: en curs
+commandCenter.appearance: Aparença
+commandCenter.back: Enrere
+commandCenter.generatePet.retry: Torna-ho a provar
+commandCenter.input: entrada
+commandCenter.installTheme.install: Instal·la
+commandCenter.installTheme.installed: Instal·lat
+commandCenter.maintenance.copyLink: Copia l’enllaç
+commandCenter.maintenance.curatorActive: Actiu
+commandCenter.maintenance.curatorDisabled: Desactivat
+commandCenter.maintenance.curatorPaused: En pausa
+commandCenter.maintenance.pause: Posa en pausa
+commandCenter.maintenance.resume: Reprèn
+commandCenter.nav.artifacts.title: Artefactes
+commandCenter.nav.capabilities.title: Capacitats
+commandCenter.nav.messaging.title: Missatgeria
+commandCenter.nav.newChat.title: Sessió nova
+commandCenter.nav.settings.title: Configuració
+commandCenter.output: sortida
+commandCenter.pets.installed: Instal·lat
+commandCenter.pets.turnOff: Desactiva
+commandCenter.pets.turnOn: Activa
+commandCenter.projects: Projectes
+commandCenter.refresh: Actualitza
+commandCenter.retry: Torna-ho a provar
+commandCenter.sections.system: Sistema
+commandCenter.sections.usage: Ús
+commandCenter.settings: Configuració
+common.apply: Aplica
+common.back: Enrere
+common.bots: Bots
+common.cancel: Cancel·la
+common.change: Canvia
+common.choose: Tria
+common.clear: Neteja
+common.close: Tanca
+common.collapse: Replega
+common.confirm: Confirma
+common.connect: Connecta
+common.connecting: S’està connectant
+common.continue: Continua
+common.copied: Copiat
+common.copy: Copia
+common.copyFailed: No s’ha pogut copiar
+common.delete: Suprimeix
+common.docs: Documentació
+common.done: Fet
+common.error: Error
+common.expand: Desplega
+common.failed: Ha fallat
+common.formatJson: Formata el JSON
+common.free: Gratuït
+common.loading: S’està carregant…
+common.notSet: Sense definir
+common.off: Desactivat
+common.on: Activat
+common.refresh: Actualitza
+common.remove: Elimina
+common.replace: Substitueix
+common.retry: Torna-ho a provar
+common.run: Executa
+common.save: Desa
+common.saving: S’està desant…
+common.send: Envia
+common.set: Defineix
+common.skip: Omet
+common.tryHint: Prova «{0}»
+common.update: Actualitza
+composer.commonCommands: Ordres habituals
+composer.endConversation: Acaba la conversa de veu
+composer.endShort: Acaba
+composer.helpFooter: obre el tauler complet · retrocés per tancar
+composer.hotkeys: Dreceres de teclat
+composer.listening: S’està escoltant
+composer.lookupLoading: S’està cercant…
+composer.lookupNoMatches: No hi ha coincidències.
+composer.lookupOr: o
+composer.lookupTry: Prova
+composer.message: Missatge
+composer.muteMic: Silencia el micròfon
+composer.muted: Silenciat
+composer.openDirective: Obre
+composer.placeholderFollowUp: Envia un missatge de seguiment
+composer.placeholderReconnecting: S’està tornant a connectar a Hermes…
+composer.placeholderStarting: S’està iniciant Hermes…
+composer.queueCollapse: Replega
+composer.queueDelete: Suprimeix
+composer.queueEdit: Edita
+composer.queueExpand: Desplega
+composer.queueMessage: Posa el missatge a la cua
+composer.queueResume: Reprèn
+composer.queueSend: Envia
+composer.queueSendNext: Següent
+composer.send: Envia
+composer.speakReplies: Llegeix les respostes en veu alta
+composer.speaking: S’està parlant
+composer.startVoice: Inicia una conversa de veu
+composer.steer: Dona indicacions a l’execució actual
+composer.stop: Atura
+composer.stopDictation: Atura el dictat
+composer.stopListening: Deixa d’escoltar i envia
+composer.stopShort: Atura
+composer.stopSpeakingReplies: Deixa de llegir les respostes en veu alta
+composer.thinking: S’està pensant
+composer.transcribing: S’està transcrivint
+composer.transcribingDictation: S’està transcrivint el dictat
+composer.unmuteMic: Activa el micròfon
+composer.voiceControls: Veu
+composer.voiceDictation: Dictat de veu
+composer.voiceEngine: Motor de conversa de veu
+composer.voiceEngineChained: Transcripció de veu i veu de Hermes
+composer.voiceEngineChainedShort: transcripció de veu
+composer.voiceEngineChangeFailed: No s’ha pogut canviar el motor de conversa de veu
+composer.voiceEngineLive: GPT-Live (dúplex complet, delega en Hermes)
+composer.voiceEngineLiveNeedsKey: Cal una clau d’API d’OpenAI
+composer.voiceEngineLiveShort: GPT-Live
+composer.wakeWord: Paraula d’activació «{0}»
+composer.wakeWordListening: 'Paraula d’activació: «{0}» — s’està escoltant'
+composer.wakeWordOff: 'Paraula d’activació: «{0}» — desactivada'
+composer.wakeWordPausedVoice: 'Paraula d’activació: «{0}» — en pausa durant la conversa de veu'
+composer.wakingProfile: S’està activant {0}…
+connectors.connect: Connecta
+connectors.connected: Connectat
+connectors.disabled: No disponible
+connectors.grant: Torna a connectar
+connectors.renameAccount: Canvia el nom
+connectors.required: Obligatori
+connectors.setupCancel: Cancel·la
+connectorsPage.accounts.add: Connecta
+connectorsPage.accounts.heading: Comptes
+connectorsPage.accounts.remove: Elimina
+connectorsPage.accounts.rename: Canvia el nom
+connectorsPage.accounts.status.inactive: Inactiu
+connectorsPage.add.authNone: Cap
+connectorsPage.add.name: Nom
+connectorsPage.card.kindManaged: Gestionat
+connectorsPage.card.state.available: Disponible
+connectorsPage.card.state.connected: Connectat
+connectorsPage.card.state.connecting: S’està connectant
+connectorsPage.card.state.serverConnecting: S’està connectant…
+connectorsPage.card.state.serverOff: Desactivat
+connectorsPage.card.state.serverOn: Activat
+connectorsPage.card.verb.connect: Connecta
+connectorsPage.card.verb.install: Instal·la
+connectorsPage.card.verb.reconnect: Torna a connectar
+connectorsPage.categoryAll: Totes les categories
+connectorsPage.dialog.advanced: Avançat
+connectorsPage.dialog.disconnect: Desconnecta
+connectorsPage.dialog.wayHosted: Gestionat
+connectorsPage.filterCategory: Categoria
+connectorsPage.group.available: Disponible
+connectorsPage.group.connected: Connectat
+connectorsPage.group.off: Desactivat
+connectorsPage.page.retry: Torna-ho a provar
+connectorsPage.page.signIn: Inicia la sessió
+connectorsPage.residencyLocal: En aquest dispositiu
+connectorsPage.segment.all: Tots
+connectorsPage.segment.available: Disponible
+connectorsPage.segment.connected: Connectat
+connectorsPage.segment.off: Desactivat
+connectorsPage.tools.remove: Elimina
+connectorsPage.tools.retry: Torna-ho a provar
+connectorsPage.tools.summaryOff: desactivat
+connectorsPage.tools.title: Eines
+connectorsPage.uncategorised: Sense categoria
+connectorsPage.vocabulary.hintUpdate.label: Actualitzacions
+contextMenu.edit.selectAll: Selecciona-ho tot
+cron.blueprints.custom: Personalitzat
+cron.deliveryLabels.email: Correu electrònic
+cron.nameLabel: Nom
+cron.optional: Opcional
+cron.pauseTitle: Posa en pausa
+cron.resumeTitle: Reprèn
+cron.scheduleLabels.custom: Personalitzat
+cron.states.completed: completat
+cron.states.disabled: desactivat
+cron.states.enabled: activat
+cron.states.paused: en pausa
+cron.states.running: en curs
+cron.states.scheduled: programat
+cron.title: Tasques programades
+desktop.archived: Arxivat
+desktop.resumeRetry: Torna-ho a provar
+errors.boundaryDetails: Detalls
+externalOpenFailed.close: Tanca
+externalOpenFailed.copyUrl: Copia l’enllaç
+externalOpenFailed.message: No hi ha cap navegador registrat per obrir aquesta adreça. Copia l’enllaç i obre’l manualment.
+externalOpenFailed.missing.message: 'Aquest fitxer no existeix: pot ser que s’hagi suprimit, s’hagi mogut o sigui en una altra
+  màquina.'
+externalOpenFailed.missing.title: No s’ha trobat el fitxer
+externalOpenFailed.title: No s’ha pogut obrir aquest enllaç
+fileMenu.copyPath: Copia el camí
+fileMenu.copyRelativePath: Copia el camí relatiu
+fileMenu.delete: Suprimeix
+fileMenu.deleteBody: Es mourà a la paperera; el podràs restaurar des d’allà.
+fileMenu.deleteTitle: Vols suprimir {0}?
+fileMenu.download: Baixa
+fileMenu.downloadFailed: No s’ha pogut baixar
+fileMenu.downloadSaved: Desat
+fileMenu.pathCopied: S’ha copiat el camí
+fileMenu.rename: Canvia el nom…
+fileMenu.renameLabel: Nom nou
+fileMenu.renameTitle: Canvia el nom
+fileMenu.revealExplorer: Mostra a l’Explorador de fitxers
+fileMenu.revealFileManager: Obre la carpeta que el conté
+fileMenu.revealFinder: Mostra al Finder
+fileMenu.revealInSidebar: Mostra a l’arbre de fitxers
+fileMenu.revealMissing: Aquesta carpeta no és en aquest ordinador
+freeTier.change: Canvia
+freeTier.copyLink: Copia l’enllaç
+freeTier.done: Fet
+freeTier.offer.signIn: Inicia la sessió
+freeTier.signIn: Inicia la sessió
+install.backToSetup: Enrere
+install.connected: Connectat
+install.probeErrorDetails: Detalls
+install.signIn: Inicia la sessió
+install.stageStates.failed: Ha fallat
+install.stageStates.pending: Pendent
+install.stageStates.succeeded: Fet
+install.testConnection: Prova la connexió
+interfaceMode.advanced.label: Avançat
+keybinds.actions.composer.queue: Posa el missatge a la cua
+keybinds.actions.session.focusSearch: Cerca sessions
+keybinds.actions.session.new: Sessió nova
+keybinds.actions.session.newWindow: Finestra nova
+keybinds.categories.profiles: Perfils
+keybinds.categories.session: Sessió
+keybinds.clear: Neteja
+keybinds.set: defineix
+language.label: Llengua
+messaging.disabled: Desactivat
+messaging.enabled: Activat
+messaging.recommended: Recomanat
+messaging.removeListEntry: Elimina
+messaging.required: Obligatori
+messaging.restartNow: Reinicia ara
+messaging.saved: Desat
+messaging.states.connected: Connectat
+messaging.states.connecting: S’està connectant
+messaging.states.disabled: Desactivat
+messaging.statusFilter.all: Tots
+messaging.statusFilter.good: Connectat
+messaging.statusFilter.muted: Inactiu
+messaging.telegramQr.add: Afegeix
+messaging.telegramQr.applying: S’està desant…
+messaging.telegramQr.recommended: Recomanat
+messaging.unknown: Desconegut
+modelAssignment.confirmAction: Confirma
+modelPicker.free: Gratuït
+modelVisibility.resetAction: Restableix
+modelVisibility.resetToDefaults: Restableix els valors predeterminats
+notifications.clearAll: Neteja-ho tot
+notifications.compressDeferredDone: La compressió del context ha acabat
+notifications.copyDetail: Copia els detalls
+notifications.copyDetailFailed: No s’han pogut copiar els detalls de la notificació
+notifications.details: Detalls
+notifications.dismiss: Descarta la notificació
+notifications.hide: Amaga
+notifications.mcp.disable: Desactiva
+notifications.mcp.signIn: Inicia la sessió
+notifications.region: Notificacions
+notifications.show: Mostra
+onboarding.change: Canvia
+onboarding.collapse: Replega
+onboarding.connected: Connectat
+onboarding.connecting: S’està connectant
+onboarding.copy: Copia
+onboarding.errorDetails: Detalls
+onboarding.free: Gratuït
+onboarding.recommended: Recomanat
+onboarding.update: Actualitza
+preview.console.clear: Neteja
+preview.console.copy: Copia
+preview.edit: Edita
+preview.hide: Amaga
+preview.tab: Previsualització
+preview.web.fallbackTitle: Previsualització
+preview.web.goBack: Enrere
+preview.web.saveComment: Desa
+profiles.actions: Accions
+profiles.default: predeterminat
+profiles.defaultBadge: Predeterminat
+profiles.displayNameLabel: Nom visible
+profiles.nameLabel: Nom
+profiles.newNameLabel: Nom nou
+profiles.notSet: Sense definir
+profiles.remoteOverride.confirmBack: Enrere
+profiles.remoteOverride.connect: Connecta
+profiles.remoteOverride.connecting: S’està connectant…
+profiles.rename: Canvia el nom
+profiles.renameMenu: Canvia el nom…
+profiles.skillsLabel: Habilitats
+profiles.soulOptional: opcional
+profiles.title: Perfils
+prompts.reconnect: Torna a connectar
+prompts.vaultCodeSkip: Omet
+prompts.vaultSavePasswordPlaceholder: Contrasenya
+rightSidebar.openFolder: Obre la carpeta
+sendDiagnostics.cancel: Cancel·la
+sendDiagnostics.close: Tanca
+sendDiagnostics.copyLink: Copia l’enllaç
+sendDiagnostics.upload: Puja
+sessionImport.all: Tots
+sessionImport.messages: missatges
+settings.about.channel.change: Canvia
+settings.about.updates: Actualitzacions
+settings.appearance.chatFontPreview: Previsualització
+settings.appearance.embedsOff: Desactivat
+settings.appearance.installButton: Instal·la
+settings.appearance.installing: S’està instal·lant…
+settings.appearance.pet.deleteConfirm: Suprimeix
+settings.appearance.pet.installedTag: instal·lat
+settings.appearance.pet.renameSave: Desa
+settings.appearance.themeTitle: Tema
+settings.appearance.title: Aparença
+settings.appearance.translucencyModeClear: Neteja
+settings.billing.autoReload.cancel: Cancel·la
+settings.billing.autoReload.disable: Desactiva
+settings.billing.autoReload.save: Desa
+settings.billing.autoReload.saving: S’està desant…
+settings.billing.autoReload.turnOff: Desactiva
+settings.billing.buyCredits.retry: Torna-ho a provar
+settings.billing.freeTier.signIn: Inicia la sessió
+settings.billing.plan.cancel: Cancel·la
+settings.billing.plan.scheduled: Programat
+settings.billing.preview: previsualització
+settings.billing.sections.usage: Ús
+settings.billing.state.autoRefill.enabledPill: Activat
+settings.billing.state.autoRefill.offPill: Desactivat
+settings.billing.state.notice.loggedOut.action: Inicia la sessió
+settings.billing.state.paymentMethod.title: Mètode de pagament
+settings.billing.state.paymentMethod.updateAction: Actualitza
+settings.billing.state.planCard.freeTier: Gratuït
+settings.billing.summary.balance: Saldo
+settings.billing.title: Facturació
+settings.billing.usage.title: Ús
+settings.config.keepAwakeOff: Desactivat
+settings.config.noResults: No s’ha trobat cap resultat
+settings.config.none: Cap
+settings.config.notSet: Sense definir
+settings.config.resetOnboardingAction: Restableix
+settings.config.searchPlaceholder: Cerca…
+settings.connections.cancel: Cancel·la
+settings.connections.editConnection: Edita
+settings.connections.headerRemove: Elimina
+settings.connections.labelTitle: Nom
+settings.connections.removeConnection: Elimina
+settings.connections.saving: S’està desant…
+settings.credentials.optional: Opcional
+settings.credentials.remove: Elimina
+settings.customEndpoints.active: Actiu
+settings.customEndpoints.fields.apiKeyPlaceholder: Opcional
+settings.customEndpoints.fields.name: Nom
+settings.customEndpoints.save: Desa
+settings.envActions.actions: Accions
+settings.envActions.clear: Neteja
+settings.envActions.docs: Documentació
+settings.envActions.replace: Substitueix
+settings.envActions.set: Defineix
+settings.gateway.cloudConnect: Connecta
+settings.gateway.cloudConnectedPill: Connectat
+settings.gateway.cloudConnectedTitle: Connectat
+settings.gateway.cloudConnecting: S’està connectant…
+settings.gateway.cloudRefresh: Actualitza
+settings.gateway.savedToken: desat
+settings.gateway.signIn: Inicia la sessió
+settings.gateway.signOut: Tanca la sessió
+settings.gateway.sshConnect: Connecta
+settings.localModels.activePill: Predeterminat
+settings.localModels.browseRefresh: Actualitza
+settings.localModels.downloadPauseAction: Posa en pausa
+settings.localModels.downloadPausedLabel: En pausa
+settings.localModels.downloadResumeAction: Reprèn
+settings.localModels.loadingPill: S’està carregant…
+settings.localModels.quickstartStageFinish: Finalitza
+settings.localModels.recommended: Recomanat
+settings.localModels.startServer: Activa
+settings.localModels.stopServer: Desactiva
+settings.managedUpdates.update: Actualitza
+settings.managedUpdates.updated: Actualitzat
+settings.managedUpdates.updating: S’està actualitzant…
+settings.mcp.disabled: desactivat
+settings.mcp.name: Nom
+settings.mcp.remove: Elimina
+settings.mcp.statusConnecting: S’està connectant…
+settings.mcp.statusOff: Desactivat
+settings.mcp.test: Prova la connexió
+settings.modeOptions.dark.label: Fosc
+settings.modeOptions.light.label: Clar
+settings.modeOptions.system.label: Sistema
+settings.model.change: Canvia
+settings.model.moaEnabled: Activat
+settings.model.provider: Proveïdor
+settings.model.reasoningOff: Desactivat
+settings.model.setupProviderFallback: proveïdor
+settings.model.tasks.review.label: Revisió
+settings.nav.about: Quant a
+settings.nav.billing: Facturació
+settings.nav.keysSettings: Configuració
+settings.nav.keysTools: Eines
+settings.nav.notifications: Notificacions
+settings.nav.plugins: Complements
+settings.nav.providerAccounts: Comptes
+settings.nav.providers: Proveïdors
+settings.notifications.completionSoundPreview: Previsualització
+settings.notifications.title: Notificacions
+settings.plugins.failed: ha fallat
+settings.plugins.installModal.install: Instal·la
+settings.plugins.installModal.installing: S’està instal·lant…
+settings.providers.collapse: Replega
+settings.providers.connected: Connectat
+settings.providers.disconnect: Desconnecta
+settings.resetToDefaults: Restableix els valors predeterminats
+settings.screenshot.retry: Torna-ho a provar
+settings.search.pill: Cerca
+settings.sections.advanced: Avançat
+settings.sections.appearance: Aparença
+settings.sections.voice: Veu
+settings.sections.workspace: Espai de treball
+settings.sessions.change: Canvia
+settings.sessions.choose: Tria
+settings.sessions.clear: Neteja
+settings.sessions.notSet: Sense definir
+settings.sessions.unarchive: Desarxiva
+settings.subpages.appearanceTheme: Tema
+settings.subpages.billingOverview: Visió general
+settings.subpages.uninstall: Desinstal·la
+settings.toolsets.activeBackend: Actiu
+settings.toolsets.modelDefault: predeterminat
+settings.toolsets.notSet: Sense definir
+settings.toolsets.nousAuthSignIn: Inicia la sessió
+settings.toolsets.postSetupInstalled: Instal·lat
+settings.toolsets.postSetupRunning: S’està instal·lant…
+settings.toolsets.set: Defineix
+settings.toolsets.terminalBackend.unavailable: No disponible
+settings.toolsets.webCapabilityUnset: sense definir
+settings.vault.add: Afegeix
+settings.vault.addConfirm: Desa
+settings.vault.adding: S’està desant…
+settings.vault.deleteConfirm: Suprimeix
+settings.vault.identifierTypes.email: Correu electrònic
+settings.vault.identifierTypes.username: Nom d’usuari
+settings.vault.passwordField: Contrasenya
+settings.vault.sources.statusOff: Desactivat
+sharedMetrics.stripDetails: Detalls
+shell.approvalMode.off: Desactivat
+shell.gatewayMenu.connected: Connectat
+shell.gatewayMenu.connecting: S’està connectant
+shell.gatewayMenu.disconnected: Desconnectat
+shell.modelMenu.free: gratuït
+shell.modelOptions.thinking: S’està pensant
+shell.statusbar.contextUsagePanel.categories.memory: Memòria
+shell.statusbar.contextUsagePanel.categories.skills: Habilitats
+shell.statusbar.gatewayConnecting: s’està connectant
+shell.statusbar.gatewayReady: preparat
+shell.statusbar.gatewayRestarting: s’està reiniciant…
+shell.statusbar.modelNone: cap
+shell.statusbar.resetStatusbar: Restableix els valors predeterminats
+shell.statusbar.restart: reinicia
+shell.statusbar.toggleWorkspace: Espai de treball
+shell.statusbar.unknown: desconegut
+shell.statusbar.update: actualitza
+sidebar.allPinned: Tot el que hi ha aquí està fixat. Desfixa un xat perquè aparegui als recents.
+sidebar.clearSearch: Neteja la cerca
+sidebar.cronJobs: Tasques de cron
+sidebar.dateDivider.lastWeek: La setmana passada
+sidebar.dateDivider.thisMonth: Aquest mes
+sidebar.dateDivider.thisWeek: Aquesta setmana
+sidebar.dateDivider.today: Avui
+sidebar.dateDivider.yesterday: Ahir
+sidebar.files: Fitxers
+sidebar.filter.archived: Arxivat
+sidebar.filter.closed: Tancada
+sidebar.filter.collapseAll: Replega-ho tot
+sidebar.filter.cost: Cost
+sidebar.filter.created: Creat
+sidebar.filter.draft: Esborrany
+sidebar.filter.expandAll: Desplega-ho tot
+sidebar.filter.filters: Filtres
+sidebar.filter.grouping: Agrupació
+sidebar.filter.idle: Inactiu
+sidebar.filter.inboxStyle: Estil de safata d’entrada
+sidebar.filter.manual: Manual
+sidebar.filter.merged: Fusionada
+sidebar.filter.needsInput: Cal una resposta
+sidebar.filter.noPR: Sense sol·licitud d’incorporació
+sidebar.filter.open: Oberta
+sidebar.filter.ordering: Ordenació
+sidebar.filter.pr: PR
+sidebar.filter.preview: Previsualització
+sidebar.filter.profile: Perfil
+sidebar.filter.project: Projecte
+sidebar.filter.pullRequest: Sol·licitud d’incorporació
+sidebar.filter.resetToDefaults: Restableix els valors predeterminats
+sidebar.filter.show: Mostra
+sidebar.filter.status: Estat
+sidebar.filter.tokens: Tokens
+sidebar.filter.unread: Sense llegir
+sidebar.filter.updated: Actualitzat
+sidebar.filter.working: En curs
+sidebar.gatewayGroups.actions: Accions del grup
+sidebar.gatewayGroups.aliasHint: Només canvia el nom visible; els noms de la passarel·la i del perfil es mantenen.
+sidebar.gatewayGroups.aliasLabel: Nom visible
+sidebar.gatewayGroups.grouping: Passarel·la i perfil
+sidebar.gatewayGroups.moveDown: Mou avall
+sidebar.gatewayGroups.moveUp: Mou amunt
+sidebar.gatewayGroups.rename: Canvia el nom del grup
+sidebar.gatewayGroups.reorder: Reordena el grup
+sidebar.gatewayGroups.resetName: Restableix el nom
+sidebar.groupAriaGrouped: Mostra les sessions en una sola llista
+sidebar.groupAriaUngrouped: Agrupa les sessions per espai de treball
+sidebar.groupTitleGrouped: Desagrupa les sessions
+sidebar.groupTitleUngrouped: Agrupa per espai de treball
+sidebar.loadCount: Carrega’n {0} més
+sidebar.loadMore: Carrega’n més
+sidebar.loading: S’està carregant…
+sidebar.logs: Registres
+sidebar.markAllRead: Marca-ho tot com a llegit
+sidebar.nav.artifacts: Artefactes
+sidebar.nav.capabilities: Capacitats
+sidebar.nav.cron: Tasques programades
+sidebar.nav.messaging: Missatgeria
+sidebar.nav.new-session: Sessió nova
+sidebar.newSessionIn: Sessió nova a {0}
+sidebar.noFilterMatches: Cap sessió no coincideix amb aquests filtres
+sidebar.noMatch: Cap sessió no coincideix amb «{0}».
+sidebar.noSessions: Encara no hi ha cap sessió
+sidebar.noWorkspace: Sense espai de treball
+sidebar.pinned: Fixat
+sidebar.profileRail: Barra de perfils
+sidebar.projectEmpty: Encara no hi ha cap sessió
+sidebar.projectLoadFailed: No s’han pogut carregar les sessions
+sidebar.projects.addFolder: Afegeix una carpeta
+sidebar.projects.addFolderTitle: Afegeix una carpeta
+sidebar.projects.branchOpenExisting: obre
+sidebar.projects.copyPath: Copia el camí
+sidebar.projects.createTitle: Projecte nou
+sidebar.projects.menu: Accions
+sidebar.projects.menuAddFolder: Afegeix una carpeta
+sidebar.projects.menuAppearance: Aparença
+sidebar.projects.menuDelete: Suprimeix
+sidebar.projects.menuRename: Canvia el nom…
+sidebar.projects.newButton: Projecte nou
+sidebar.projects.removeFolder: Elimina
+sidebar.projects.sectionLabel: Projectes
+sidebar.projects.worktreeProjectLabel: Projecte
+sidebar.results: Resultats
+sidebar.review: Revisió
+sidebar.row.ageNow: ara
+sidebar.row.archive: Arxiva
+sidebar.row.backgroundRunning: Tasca en segon pla en curs
+sidebar.row.branchFrom: Crea una branca
+sidebar.row.continuationOrigin: Continuació automàtica — aquesta conversa s’ha comprimit i ha continuat
+sidebar.row.copyId: Copia l’ID
+sidebar.row.copyIdFailed: No s’ha pogut copiar l’ID de la sessió
+sidebar.row.deleteDesc: Se suprimirà «{0}» permanentment. Aquesta acció no es pot desfer.
+sidebar.row.deleteTitle: Vols suprimir la sessió?
+sidebar.row.deleted: S’ha suprimit la sessió
+sidebar.row.deleting: S’està suprimint…
+sidebar.row.draftSession: Esborrany — encara no s’ha enviat res
+sidebar.row.export: Exporta
+sidebar.row.finishedUnread: Acabat — sense llegir
+sidebar.row.handoffOrigin: Transferit des de {0}
+sidebar.row.hideTabBar: Amaga la barra de pestanyes
+sidebar.row.markRead: Marca com a llegit
+sidebar.row.markUnread: Marca com a no llegit
+sidebar.row.needsInput: Cal que responguis
+sidebar.row.newWindow: Finestra nova
+sidebar.row.openInNewTab: Obre en una pestanya nova
+sidebar.row.openInSplit: Obre en una divisió
+sidebar.row.openInTerminal: Obre al terminal
+sidebar.row.ownedByProfile: 'Perfil: {0}'
+sidebar.row.pin: Fixa
+sidebar.row.rename: Canvia el nom…
+sidebar.row.renameDesc: Deixa-ho buit per esborrar-ho.
+sidebar.row.renameFailed: No s’ha pogut canviar el nom
+sidebar.row.renameTitle: Canvia el nom de la sessió
+sidebar.row.renamed: S’ha canviat el nom
+sidebar.row.sessionActions: Accions de la sessió
+sidebar.row.sessionRunning: Sessió en curs
+sidebar.row.todoProgress: Tasques completades
+sidebar.row.unarchive: Desarxiva
+sidebar.row.unpin: Desfixa
+sidebar.row.unreadFailed: No s’ha pogut actualitzar l’estat de lectura
+sidebar.row.untitledChat: Xat {0}
+sidebar.row.untitledPlaceholder: Sessió sense títol
+sidebar.row.waitingForAnswer: S’està esperant la teva resposta
+sidebar.searchAria: Cerca sessions
+sidebar.searchPlaceholder: Cerca sessions…
+sidebar.shiftClickHint: Fes Maj+clic en un xat per fixar-lo
+sidebar.showMoreIn: Mostra’n {0} més a {1}
+sidebar.showProjects: Mostra els projectes
+sidebar.showSessions: Mostra les sessions
+sidebar.statusDivider.done: Fet
+sidebar.statusDivider.working: En curs
+sidebar.storageCorrupt.action: 'Tanca Hermes en aquest perfil i després examina el fitxer sense modificar-lo, o restaura una
+  instantània:'
+sidebar.storageCorrupt.body: Hermes no pot llegir tot l’historial de sessions de {0}. Els xats que falten en aquesta llista
+  no s’han suprimit; el fitxer on es desen està malmès.
+sidebar.storageCorrupt.guide: Guia de recuperació
+sidebar.storageCorrupt.title: La base de dades de sessions està malmesa
+skillDeepLink.installed: Instal·lat
+skillDeepLink.installing: S’està instal·lant…
+skills.all: Tots
+skills.archive: Arxiva
+skills.edit: Edita
+skills.hub.close: Tanca
+skills.hub.files: Fitxers
+skills.hub.install: Instal·la
+skills.hub.installed: Instal·lat
+skills.hub.preview: Previsualització
+skills.hub.search: Cerca
+skills.hub.uninstall: Desinstal·la
+skills.plugins.catalogBrowse: Explora
+skills.plugins.serverStates.connected: connectat
+skills.plugins.settingsForm.required: Obligatori
+skills.plugins.uninstall: Desinstal·la
+skills.tabPlugins: Complements
+skills.tabSkills: Habilitats
+skills.tabToolsets: Eines
+starmap.filterAll: Tots
+starmap.loading: S’està carregant…
+starmap.memory: Memòria
+starmap.refresh: Actualitza
+statusStack.coding.close: Tanca
+statusStack.coding.openFile: Obre el fitxer
+statusStack.coding.review: Revisió
+statusStack.coding.scopeBranch: Crea una branca
+statusStack.control.add: Afegeix
+statusStack.stop: Atura
+titlebar.search: Cerca
+ui.pagination.next: Següent
+ui.search.clear: Neteja la cerca
+updates.copied: Copiat
+updates.copy: Copia
+updates.done: Fet
+updates.versionDetailsVersion: Versió
+webhooks.copy: Copia
+webhooks.created: Creat
+webhooks.delete: Suprimeix
+webhooks.deliverOptions.email: Correu electrònic
+webhooks.disableRow: Desactiva
+webhooks.done: Fet
+webhooks.enableRow: Activa
+webhooks.fieldDescription: Descripció
+webhooks.fieldName: Nom
+webhooks.fieldSkills: Habilitats
+zones.custom: Personalitzat
+zones.reset: Restableix
