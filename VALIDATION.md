@@ -1,7 +1,8 @@
-# Validation · 0.1.0
+# Validation · 0.1.1
 
 Validated on 2026-10-11 against Hermes source revision
-`c0ef5af5205dbdc25e9e44acd66873b4bb3503c9`.
+`74f77ab9b04c502aa7ee0999346f05f027ea9b48` (latest upstream snapshot at validation time).
+Also checked against the installed Hermes revision `c0ef5af5205dbdc25e9e44acd66873b4bb3503c9`.
 
 ## Hermes plugin validation
 
@@ -12,7 +13,7 @@ HERMES_HOME=/tmp/hermes-ca-validation-home hermes plugins validate /tmp/hermes-l
 Result: **Validation passed**.
 
 - Manifest, version requirement and manifest-only language-pack loading accepted.
-- Core: 208 keys; all recognized.
+- Core: 349 keys; all recognized.
 - TUI: 254 keys; all recognized.
 - Desktop: 699 keys; all recognized.
 - No Python runtime dependencies or registered tools.
@@ -44,6 +45,14 @@ imports and no loader mocks. Verified:
 - The Desktop catalog serves `common.save: Desa`.
 - Setting `display.language: ca` selects Catalan.
 - Unloading the plugin removes the registered language.
+
+For 0.1.1, an isolated temporary profile was used to load the updated pack and call the real
+`CLIInfoMixin.show_help()` renderer against both the upstream snapshot and the installed checkout.
+Verified all English `slash.*` and `cli.help.*` keys have Catalan translations, every registry
+command resolves a translated description, and rendered help includes `Sessió`, `Configuració`,
+`Inicia una sessió nova`, translated usage suffixes and hints. Parser-sensitive approval menus
+still fall back to English. The built-in skin still overrides the help title with
+`Available Commands`; this limitation is documented in README.md.
 
 No interactive Desktop or TUI rendering was tested. The translation has not received an independent
 linguistic review and is not a complete localization.

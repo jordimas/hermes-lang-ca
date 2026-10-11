@@ -26,19 +26,24 @@ hermes config set display.language en
 This pack translates static UI text. To have the agent answer in Catalan, also ask it to do so in
 your instructions. Tool output, logs and slash-command names are not translated by language packs.
 
-## Coverage · version 0.1.0
+## Coverage · version 0.1.1
 
 | Surface | Translated keys | English reference keys | Coverage |
 | --- | ---: | ---: | ---: |
-| Core / CLI / gateway | 208 | 3,438 | 6.1% |
+| Core / CLI / gateway | 349 | 3,438 | 10.2% |
 | TUI | 254 | 1,301 | 19.5% |
 | Desktop | 699 | 5,065 | 13.8% |
-| **Total** | **1,161** | **9,804** | **11.8%** |
+| **Total** | **1,302** | **9,804** | **13.3%** |
 
-Counts refer to Hermes revision `c0ef5af5205dbdc25e9e44acd66873b4bb3503c9`.
-The first release focuses on approvals, common actions, session navigation, status messages,
-voice controls and tool activity. A matching key means the translation is recognized; these counts
+Counts refer to Hermes revision `74f77ab9b04c502aa7ee0999346f05f027ea9b48`.
+Version 0.1.1 adds all current slash-command descriptions, `/help` text and section headings,
+and welcome/shutdown messages. The pack also covers approvals, common actions, session navigation,
+status messages, voice controls and tool activity. A matching key means the translation is recognized; these counts
 do not imply that a whole screen or workflow has been translated.
+
+Hermes' built-in CLI skins currently override the translated `/help` title and welcome/goodbye
+text with English branding. The startup banner also contains hardcoded English labels. A language
+pack cannot override those; `/help` section headings and command descriptions use the translations.
 
 ## Layout
 

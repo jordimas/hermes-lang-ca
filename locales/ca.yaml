@@ -46,7 +46,30 @@ cli.connect.button_continue: Continua
 cli.connect.connected: Connectat
 cli.connect.secret_set: Defineix
 cli.gateway_status.enabled: Activat
+cli.help.header: '(^_^)? Ordres disponibles'
 cli.help.section_configuration: Configuració
+cli.help.section_tools_skills: Eines i habilitats
+cli.help.section_info: Informació
+cli.help.section_context: Context
+cli.help.section_background_automation: Tasques en segon pla i automatització
+cli.help.usage_suffix: '{description} (ús: /{command} {args})'
+cli.help.alias_suffix: '{description} (àlies de /{command})'
+cli.help.skill_commands: Ordres d’habilitats
+cli.help.skill_bundles: Paquets d’habilitats
+cli.help.quick_commands: Ordres ràpides
+cli.help.n_installed: '{count} instal·lades'
+cli.help.n_configured: '{count} configurades'
+cli.help.n_skills: '{count} habilitats'
+cli.help.load_n_skills: Carrega {count} habilitats
+cli.help.no_skill_commands: No hi ha cap ordre d’habilitat instal·lada.
+cli.help.matching_query: que coincideixen amb «{query}»
+cli.help.to_list_them: per mostrar-ne la llista
+cli.help.filtered_by: 'Filtrat per «{query}». Executa /help per veure la llista completa.'
+cli.help.tip_line: 'Consell: /help skills mostra les ordres d’habilitats · /help <text> filtra · Ctrl+P obre la paleta d’ordres'
+cli.help.multiline_hint: 'Diverses línies: Ctrl+J, Alt+Enter o \\\\+Enter per afegir una línia nova'
+cli.help.draft_editor_hint: 'Editor d’esborranys: Ctrl+G (Alt+G al VSCode/Cursor)'
+cli.help.attach_image_hint: 'Adjunta una imatge: /image {path} o comença la instrucció amb el camí d’una imatge local'
+cli.help.paste_image_hint: 'Enganxa una imatge: Alt+V (o /paste)'
 cli.help.section_exit: Surt
 cli.help.section_session: Sessió
 cli.modal.cancel: Cancel·la
@@ -207,7 +230,125 @@ platform.teams.summary.none_item: Cap
 platform.telegram.picker.unknown_model: desconegut
 platform.telegram.prompt.affirm_word: Sí
 platform.whatsapp.clarify_list_button: Tria
+cli.tui.welcome: Et donem la benvinguda a Hermes Agent! Escriu el teu missatge o /help per veure les ordres.
+cli.tui.shutting_down: S’està tancant… (finalitzant la sessió)
+cli.session.goodbye: Adeu! ☤
 slash.category.configuration: Configuració
+slash.category.info: Informació
+slash.category.tools_skills: Eines i habilitats
+slash.category.context: Context
+slash.category.background_automation: Tasques en segon pla i automatització
 slash.category.exit: Surt
 slash.category.plugins: Complements
 slash.category.session: Sessió
+slash.shared.usage_suffix: '{description} (ús: /{name} {args_hint})'
+slash.shared.alias_for: '{description} (àlies de /{name})'
+slash.shared.alias_note: ' (àlies: {aliases})'
+slash.shared.slack_alias_for: 'Àlies de /{name}: {description}'
+slash.shared.plugin_default_desc: Executa /{name}
+slash.shared.plugin_command_desc: Ordre d’un complement
+slash.approve.description: Aprova una ordre perillosa pendent
+slash.bg.description: Executa una instrucció en una sessió separada en segon pla
+slash.insights.description: Mostra estadístiques i anàlisis d’ús
+slash.reload_mcp.description: Torna a carregar els servidors MCP de la configuració
+slash.resume.description: Reprèn una sessió a la qual has assignat un nom
+slash.sethome.description: Estableix aquest xat com a canal principal
+slash.update.description: Actualitza Hermes Agent a la versió més recent
+slash.hermes.description: Parla amb Hermes o executa una subordre
+slash.start.description: Reconeix els avisos d’inici de la plataforma sense respondre
+slash.new.description: Inicia una sessió nova (identificador i historial nous)
+slash.topic.description: Activa o consulta les sessions per temes dels missatges directes de Telegram
+slash.clear.description: Neteja la pantalla i inicia una sessió nova
+slash.redraw.description: Força el redibuix de tota la interfície (corregeix desajustos del terminal)
+slash.history.description: Mostra l’historial de la conversa
+slash.save.description: Exporta la conversa actual (/save sense arguments mostra com s’utilitza)
+slash.retry.description: Torna a provar l’últim missatge (el torna a enviar a l’agent)
+slash.prompt.description: Redacta la instrucció següent a $EDITOR (Markdown) i envia-la
+slash.undo.description: Retrocedeix N torns d’usuari i torna a escriure la instrucció (1 per defecte)
+slash.title.description: Assigna un títol a la sessió actual
+slash.handoff.description: Traspassa aquesta sessió a una plataforma de missatgeria (Telegram, Discord, etc.)
+slash.branch.description: Bifurca la sessió actual (fil nou a Discord/Telegram/Slack/Matrix; --here la manté aquí)
+slash.worktree.description: Mostra, llista, crea o elimina arbres de treball aïllats de Git
+slash.compress.description: Comprimeix el context de la conversa (afegeix 'here [N]' per conservar els últims N torns; --preview mostra què passaria)
+slash.rollback.description: Llista o restaura punts de control del sistema de fitxers (conserva els canvis manuals; --all els sobreescriu)
+slash.snapshot.description: Crea o restaura instantànies de la configuració i l’estat de Hermes
+slash.export.description: Exporta un perfil (configuració, habilitats i tema) a un arxiu que pots compartir
+slash.import.description: Importa un arxiu de perfil compartit com a perfil nou
+slash.stop.description: Atura tots els processos en segon pla en execució
+slash.pause.description: Atura globalment la feina nova (aturada d’emergència); '/pause off' la reprèn
+slash.deny.description: Denega una ordre perillosa pendent (opcionalment amb un motiu)
+slash.btw.description: Fes una pregunta addicional sobre la conversa actual sense interrompre-la
+slash.agents.description: Mostra els agents actius i les tasques en execució
+slash.journey.description: Obre la cronologia del recorregut d’aprenentatge
+slash.queue.description: Posa una instrucció a la cua per al torn següent o gestiona la cua amb list/edit/rm/move/clear
+slash.steer.description: Introdueix un missatge després de la crida a una eina següent sense interrompre l’execució
+slash.goal.description: Estableix un objectiu que Hermes persegueix entre torns fins a assolir-lo
+slash.heartbeat.description: Estableix una instrucció recurrent que torna a entrar en aquesta sessió quan està inactiva
+slash.refine.description: Revisa ara aquesta conversa i desa les lliçons a la memòria o a les habilitats
+slash.review.description: Crea un subagent independent per revisar la feina que acabes de comentar (PR, codi o documentació)
+slash.loop.description: Torna a executar una instrucció periòdicament en aquesta sessió
+slash.plan.description: Escriu un pla d’implementació en Markdown a .hermes/plans/ sense executar res
+slash.initiate-setup.description: Executa la configuració inicial per conèixer-te i adaptar Hermes a tu
+slash.moa.description: Executa una instrucció amb la configuració predeterminada de Mixture of Agents i després restaura el model
+slash.subgoal.description: Afegeix o gestiona criteris addicionals de l’objectiu actiu
+slash.status.description: Mostra informació de la sessió, el model, els tokens i el context
+slash.egress.description: Mostra l’estat del servidor intermediari de trànsit de sortida de Docker
+slash.context.description: Mostra la finestra de context detallada amb l’indicador d’ús, les categories, les estadístiques de compressió i el rendiment
+slash.whoami.description: Mostra el teu nivell d’accés a les ordres (administrador o usuari)
+slash.profile.description: Mostra el nom del perfil actiu i el seu directori principal
+slash.sessions.description: Explora i reprèn sessions anteriors
+slash.config.description: Mostra la configuració actual
+slash.model.description: Canvia el model (només per a aquesta sessió; --global per desar-lo)
+slash.codex-runtime.description: Activa o desactiva l’execució amb codex app-server per als models d’OpenAI/Codex
+slash.personality.description: Estableix una personalitat predefinida
+slash.statusbar.description: Mostra o amaga la barra d’estat del context i el model
+slash.battery.description: Mostra o amaga l’indicador de bateria amb colors a la barra d’estat
+slash.timestamps.description: Mostra o amaga les marques de temps [HH:MM] als missatges i a /history
+slash.diff.description: Mostra els canvis de Git al directori de treball
+slash.verbose.description: Canvia la visualització del progrés de les eines entre off -> new -> all -> verbose
+slash.focus.description: Activa o desactiva la vista de concentració, que només mostra la instrucció i la resposta final
+slash.footer.description: Mostra o amaga el peu amb metadades d’execució de la passarel·la a les respostes finals
+slash.yolo.description: Activa o desactiva el mode YOLO (omet totes les aprovacions d’ordres perilloses)
+slash.approvals.description: Mostra o estableix el mode persistent d’aprovació d’ordres perilloses
+slash.reasoning.description: Gestiona l’esforç de raonament i com es mostra
+slash.fast.description: Mode ràpid — OpenAI Priority Processing / Anthropic Fast Mode (normal/fast/auto/cold/ultrafast)
+slash.skin.description: Mostra o canvia el tema visual
+slash.indicator.description: Tria l’estil de l’indicador d’activitat de la TUI
+slash.voice.description: Activa o desactiva el mode de veu
+slash.wake.description: Activa o desactiva la detecció de la paraula d’activació 'Hey Hermes'
+slash.busy.description: Controla el comportament dels missatges mentre Hermes treballa
+slash.tools.description: 'Gestiona les eines: /tools [list|disable|enable] [name...]'
+slash.toolsets.description: Llista els conjunts d’eines disponibles
+slash.skills.description: Cerca, instal·la, consulta o gestiona habilitats
+slash.memory.description: Revisa les escriptures pendents a la memòria o activa i desactiva l’aprovació
+slash.bundles.description: Llista els paquets d’habilitats (àlies /<name> per a diverses habilitats)
+slash.pet.description: Mostra, amaga o adopta una mascota de petdex (/pet, /pet list, /pet <slug>)
+slash.hatch.description: Genera una mascota nova de petdex a partir d’una descripció
+slash.learn.description: Aprèn una habilitat reutilitzable a partir del que descriguis (directoris, URL, aquest xat o notes)
+slash.init.description: Genera o actualitza les instruccions del projecte a AGENTS.md a partir d’una exploració del repositori
+slash.cron.description: Gestiona les tasques programades
+slash.suggestions.description: Revisa les automatitzacions suggerides (accept/dismiss)
+slash.blueprint.description: Configura una automatització a partir d’una plantilla
+slash.curator.description: Manteniment d’habilitats en segon pla (status, run, pin, archive, list-archived)
+slash.kanban.description: Tauler de col·laboració entre perfils (tasques, enllaços i comentaris)
+slash.reload.description: Torna a carregar les variables de .env a la sessió en execució
+slash.reload-mcp.description: Torna a carregar els servidors MCP de la configuració
+slash.reload-skills.description: Torna a explorar ~/.hermes/skills/ per detectar habilitats instal·lades o eliminades
+slash.browser.description: Connecta les eines del navegador al navegador Chromium o derivat que tens obert mitjançant CDP, o canvia al mode Browser Use
+slash.plugins.description: Llista els complements instal·lats i el seu estat
+slash.commands.description: Explora totes les ordres i habilitats (amb paginació)
+slash.help.description: Mostra les ordres disponibles (/help skills llista les ordres d’habilitats; /help <text> filtra)
+slash.palette.description: Obre la paleta de cerca aproximada d’ordres (també amb Ctrl+P)
+slash.restart.description: Reinicia la passarel·la quan acabin les execucions actives
+slash.usage.description: Mostra l’ús de tokens i els límits de peticions; `reset` bescanvia un restabliment del límit de Codex acumulat
+slash.subscription.description: Consulta el pla de Nous i canvia’l al navegador
+slash.login.description: Inicia la sessió amb un compte de Nous (conserva els connectors)
+slash.topup.description: Mostra el saldo de Nous i gestiona la facturació al portal
+slash.platforms.description: Mostra l’estat de la passarel·la i les plataformes de missatgeria
+slash.platform.description: Atura, reprèn o llista una plataforma de la passarel·la que falla
+slash.copy.description: Copia l’última resposta de l’assistent al porta-retalls
+slash.paste.description: Adjunta una imatge del porta-retalls
+slash.image.description: Adjunta un fitxer d’imatge local per a la instrucció següent
+slash.version.description: Mostra la versió de Hermes Agent
+slash.debug.description: Puja un informe de depuració (informació del sistema i registres) i obtén enllaços per compartir-lo
+slash.quit.description: Surt de la CLI (utilitza --delete per eliminar també l’historial de la sessió)
