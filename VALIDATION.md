@@ -1,4 +1,4 @@
-# Validation · 0.1.1
+# Validation · 0.1.2
 
 Validated on 2026-10-11 against Hermes source revision
 `74f77ab9b04c502aa7ee0999346f05f027ea9b48` (latest upstream snapshot at validation time).
@@ -13,7 +13,7 @@ HERMES_HOME=/tmp/hermes-ca-validation-home hermes plugins validate /tmp/hermes-l
 Result: **Validation passed**.
 
 - Manifest, version requirement and manifest-only language-pack loading accepted.
-- Core: 349 keys; all recognized.
+- Core: 408 keys; all recognized.
 - TUI: 254 keys; all recognized.
 - Desktop: 699 keys; all recognized.
 - No Python runtime dependencies or registered tools.
@@ -53,6 +53,13 @@ command resolves a translated description, and rendered help includes `Sessió`,
 `Inicia una sessió nova`, translated usage suffixes and hints. Parser-sensitive approval menus
 still fall back to English. The built-in skin still overrides the help title with
 `Available Commands`; this limitation is documented in README.md.
+
+For 0.1.2, all three catalogs were audited against the latest snapshot using
+`scripts/check.py --hermes-source /path/to/hermes-agent --missing-dir /tmp/hermes-ca-missing`.
+Missing translations: core 3,030; TUI 1,047; Desktop 4,366 (8,443 total).
+All translated keys are recognized. The package is partial, not a complete translation.
+The first 48 startup tips and all 11 input examples are now translated, including
+`tips.t027` (`/insights`) and `tips.placeholder.p08` (the to-do list example).
 
 No interactive Desktop or TUI rendering was tested. The translation has not received an independent
 linguistic review and is not a complete localization.

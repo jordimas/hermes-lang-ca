@@ -26,18 +26,20 @@ hermes config set display.language en
 This pack translates static UI text. To have the agent answer in Catalan, also ask it to do so in
 your instructions. Tool output, logs and slash-command names are not translated by language packs.
 
-## Coverage · version 0.1.1
+## Coverage · version 0.1.2
 
 | Surface | Translated keys | English reference keys | Coverage |
 | --- | ---: | ---: | ---: |
-| Core / CLI / gateway | 349 | 3,438 | 10.2% |
+| Core / CLI / gateway | 408 | 3,438 | 11.9% |
 | TUI | 254 | 1,301 | 19.5% |
 | Desktop | 699 | 5,065 | 13.8% |
-| **Total** | **1,302** | **9,804** | **13.3%** |
+| **Total** | **1,361** | **9,804** | **13.9%** |
 
 Counts refer to Hermes revision `74f77ab9b04c502aa7ee0999346f05f027ea9b48`.
 Version 0.1.1 adds all current slash-command descriptions, `/help` text and section headings,
-and welcome/shutdown messages. The pack also covers approvals, common actions, session navigation,
+and welcome/shutdown messages. Version 0.1.2 adds the first 48 startup tips and all 11 empty-input
+example prompts; the remaining startup tips still fall back to English.
+The pack also covers approvals, common actions, session navigation,
 status messages, voice controls and tool activity. A matching key means the translation is recognized; these counts
 do not imply that a whole screen or workflow has been translated.
 
@@ -91,6 +93,10 @@ The additional check verifies known keys, text values, placeholder multiplicity 
 See [VALIDATION.md](VALIDATION.md) for release checks and the
 [upstream language-pack guide](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/user-guide/features/language-packs.md)
 for the plugin format.
+
+To audit every available key and export complete lists of missing translations, add
+`--missing-dir /tmp/hermes-ca-missing` to the check command above. Validation checks translation
+correctness; it does not require full coverage.
 
 ## Instal·lació en català
 

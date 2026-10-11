@@ -352,3 +352,62 @@ slash.image.description: Adjunta un fitxer d’imatge local per a la instrucció
 slash.version.description: Mostra la versió de Hermes Agent
 slash.debug.description: Puja un informe de depuració (informació del sistema i registres) i obtén enllaços per compartir-lo
 slash.quit.description: Surt de la CLI (utilitza --delete per eliminar també l’historial de la sessió)
+tips.t001: /bg <prompt> executa una tasca en una sessió separada mentre l’actual queda lliure; /btw <question> respon una pregunta addicional sobre aquesta conversa sense interrompre-la.
+tips.t002: /branch bifurca la sessió actual per explorar una altra direcció sense perdre el progrés.
+tips.t003: /compress comprimeix manualment el context quan la conversa s’allarga.
+tips.t004: /rollback llista els punts de control del sistema de fitxers per restaurar els fitxers que l’agent ha modificat a un estat anterior.
+tips.t005: /rollback diff 2 mostra els canvis des del punt de control 2 sense restaurar res.
+tips.t006: /rollback 2 src/file.py restaura un sol fitxer d’un punt de control concret.
+tips.t007: /title "my project" dona un nom a la sessió; reprèn-la més endavant amb /resume o hermes -c.
+tips.t008: /resume reprèn una sessió amb nom des d’on la vas deixar.
+tips.t009: /queue <prompt> posa un missatge a la cua per al torn següent sense interrompre l’actual.
+tips.t010: /undo elimina l’últim intercanvi entre l’usuari i l’assistent de la conversa.
+tips.t011: /retry torna a enviar l’últim missatge; és útil si la resposta de l’agent no era l’adequada.
+tips.t012: '/verbose canvia la visualització del progrés de les eines: off → new → all → verbose.'
+tips.t013: /reasoning high augmenta la profunditat del raonament del model. /reasoning show mostra el raonament.
+tips.t014: /fast activa o desactiva el processament prioritari per obtenir respostes de l’API més ràpides (depèn del proveïdor).
+tips.t015: /yolo omet totes les aprovacions d’ordres perilloses durant la resta de la sessió.
+tips.t016: /model permet canviar de model durant la sessió; prova /model sonnet o /model gpt-5.
+tips.t017: /model --global canvia permanentment el model predeterminat.
+tips.t018: /personality pirate estableix una personalitat divertida; hi ha 14 opcions integrades, de kawaii a shakespeare.
+tips.t019: /skin canvia el tema de la CLI; prova ares, mono, slate, poseidon o charizard.
+tips.t020: /statusbar mostra o amaga una barra persistent amb el model, els tokens, el percentatge d’ús del context, el cost i la durada.
+tips.t021: /tools disable browser elimina temporalment les eines del navegador de la sessió actual.
+tips.t022: /browser connect connecta les eines del navegador al navegador Chromium o derivat que tens obert mitjançant CDP.
+tips.t023: /plugins llista els complements instal·lats i el seu estat.
+tips.t024: /cron gestiona les tasques programades; configura instruccions recurrents amb lliurament a qualsevol plataforma.
+tips.t025: /reload-mcp torna a carregar la configuració dels servidors MCP sense reiniciar.
+tips.t026: /usage mostra l’ús de tokens, el detall del cost i la durada de la sessió.
+tips.t027: /insights mostra les estadístiques d’ús dels últims 30 dies.
+tips.t028: /paste cerca una imatge al porta-retalls i l’adjunta al missatge següent.
+tips.t029: /profile mostra el perfil actiu i el seu directori principal.
+tips.t030: /config mostra la configuració actual d’un cop d’ull.
+tips.t031: /stop atura tots els processos en segon pla que l’agent ha iniciat.
+tips.t032: '@file:path/to/file.py incorpora el contingut del fitxer directament al missatge.'
+tips.t033: '@file:main.py:10-50 incorpora només les línies 10-50 d’un fitxer.'
+tips.t034: '@folder:src/ incorpora la llista de fitxers d’un directori en forma d’arbre.'
+tips.t035: '@diff incorpora al missatge els canvis de Git que no has afegit a l’índex.'
+tips.t036: '@staged incorpora els canvis de Git que has afegit a l’índex (git diff --staged).'
+tips.t037: '@git:5 incorpora els últims 5 commits amb els pedaços complets.'
+tips.t038: '@url:https://example.com obté el contingut d’una pàgina web i l’incorpora al missatge.'
+tips.t039: Escriure @ activa la compleció de camins del sistema de fitxers per navegar fins a qualsevol fitxer interactivament.
+tips.t040: 'Combina diverses referències: "Revisa @file:main.py i @file:test.py per comprovar que són coherents."'
+tips.t041: Alt+Enter insereix una línia nova. (El Windows Terminal intercepta Alt+Enter; utilitza Ctrl+Enter.)
+tips.t042: Ctrl+C interromp l’agent. Prem-lo dues vegades en menys de 2 segons per forçar la sortida.
+tips.t043: Ctrl+Z suspèn Hermes en segon pla; executa fg a l’intèrpret d’ordres per reprendre’l.
+tips.t044: Tab accepta el text suggerit o completa les ordres que comencen amb una barra.
+tips.t045: Escriu un missatge nou mentre l’agent treballa per interrompre’l i redirigir-lo.
+tips.t046: Alt+V enganxa una imatge del porta-retalls a la conversa.
+tips.t047: Si enganxes 5 línies o més, es desen automàticament en un fitxer i s’hi insereix una referència compacta.
+tips.t048: hermes -c reprèn la sessió de la CLI més recent. hermes -c "project name" la reprèn pel títol.
+tips.placeholder.p01: Pregunta el que vulguis o escriu / per veure les ordres…
+tips.placeholder.p02: Resumeix el contingut d’aquesta carpeta
+tips.placeholder.p03: Redacta una resposta a l’últim correu de la safata d’entrada
+tips.placeholder.p04: Planifica una funcionalitat i implementa-la pas a pas
+tips.placeholder.p05: Troba i corregeix una prova que falla
+tips.placeholder.p06: Investiga aquest tema i escriu-ne un resum
+tips.placeholder.p07: Què ha canviat recentment en aquest repositori?
+tips.placeholder.p08: Converteix aquestes notes en una llista de tasques
+tips.placeholder.p09: Explica aquest error i com corregir-lo
+tips.placeholder.p10: Estableix un recordatori o programa una tasca recurrent
+tips.placeholder.p11: Escriu / per explorar les ordres o Ctrl+P per obrir la paleta

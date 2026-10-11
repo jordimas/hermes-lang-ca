@@ -14,6 +14,8 @@ import sys
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--hermes-source', type=Path, required=True)
+    parser.add_argument('--missing-dir', type=Path,
+                        help='Write complete missing-key lists for all three surfaces to this directory')
     args = parser.parse_args()
     source = args.hermes_source.resolve()
     sys.path.insert(0, str(source))
@@ -49,7 +51,12 @@ def main():
                 failures.append(f'{file.name}: placeholder mismatch at {key}')
             if '\n' in english[key] and text.count('\n') != english[key].count('\n'):
                 failures.append(f'{file.name}: newline mismatch at {key}')
-        print(f'{surface}: {len(catalog)} / {len(known)} keys')
+        missing = sorted(known - set(catalog))
+        print(f'{surface}: {len(set(catalog) & known)} / {len(known)} keys; {len(missing)} missing')
+        if args.missing_dir:
+            args.missing_dir.mkdir(parents=True, exist_ok=True)
+            (args.missing_dir / f'missing.{surface}.json').write_text(
+                json.dumps(missing, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     if failures:
         print('\n'.join(failures), file=sys.stderr)
         return 1
