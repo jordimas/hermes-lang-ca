@@ -1,4 +1,4 @@
-# Català — full text catalog; see VALIDATION.md for runtime limitations.
+# Català — full text catalog; see README.md for runtime limitations.
 agents.activeCount: "{0} actius"
 agents.ageDays: "fa {0}d"
 agents.ageHours: "fa {0}h"

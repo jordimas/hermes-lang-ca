@@ -1,4 +1,4 @@
-# Català — full text catalog; see VALIDATION.md for runtime limitations.
+# Català — full text catalog; see README.md for runtime limitations.
 approval.allowed_always: "      ✓ Afegit a la llista de permisos permanents"
 approval.allowed_once: "      ✓ Permès una vegada"
 approval.allowed_session: "      ✓ Permès en aquesta sessió"

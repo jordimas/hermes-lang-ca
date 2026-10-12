@@ -1,4 +1,4 @@
-# Català — full text catalog; see VALIDATION.md for runtime limitations.
+# Català — full text catalog; see README.md for runtime limitations.
 billing.autoReload.aDifferentCard: "una altra targeta"
 billing.autoReload.agreeAndTurnOn: "Accepta i activa"
 billing.autoReload.authorization: "En confirmar-ho, autoritzes Nous Research a carregar {0} sempre que el vostre saldo baixi per sota del llindar. Desactiveu-ho en qualsevol moment aquí o al portal."
