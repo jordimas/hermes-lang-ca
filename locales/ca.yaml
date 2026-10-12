@@ -233,6 +233,11 @@ platform.whatsapp.clarify_list_button: Tria
 cli.tui.welcome: Et donem la benvinguda a Hermes Agent! Escriu el teu missatge o /help per veure les ordres.
 cli.tui.shutting_down: S’està tancant… (finalitzant la sessió)
 cli.session.goodbye: Adeu! ☤
+cli.session.exit_resume_hint: 'Reprèn aquesta sessió amb:'
+cli.session.exit_label_session: 'Sessió:         {session_id}'
+cli.session.exit_label_title: 'Títol:          {title}'
+cli.session.exit_label_duration: 'Durada:         {duration}'
+cli.session.exit_label_messages: 'Missatges:      {count} ({user} de l’usuari, {tool_calls} crides a eines)'
 slash.category.configuration: Configuració
 slash.category.info: Informació
 slash.category.tools_skills: Eines i habilitats
