@@ -29,4 +29,4 @@ hermes plugins validate /path/to/hermes-lang-ca
 
 ## License
 
-MIT. Derived from Hermes Agent's English UI catalogs. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
+MIT. Derived from Hermes Agent's English UI catalogs. See [LICENSE](LICENSE).
