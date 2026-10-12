@@ -357,6 +357,8 @@ slash.image.description: Adjunta un fitxer d’imatge local per a la instrucció
 slash.version.description: Mostra la versió de Hermes Agent
 slash.debug.description: Puja un informe de depuració (informació del sistema i registres) i obtén enllaços per compartir-lo
 slash.quit.description: Surt de la CLI (utilitza --delete per eliminar també l’historial de la sessió)
+cli.tip_line: '✦ Consell: {tip}'
+tips.t093: 'Estableix agent.max_turns: 1000 perquè l’agent pugui fer més passos amb crides a eines per torn.'
 tips.t001: /bg <prompt> executa una tasca en una sessió separada mentre l’actual queda lliure; /btw <question> respon una pregunta addicional sobre aquesta conversa sense interrompre-la.
 tips.t002: /branch bifurca la sessió actual per explorar una altra direcció sense perdre el progrés.
 tips.t003: /compress comprimeix manualment el context quan la conversa s’allarga.

@@ -26,20 +26,21 @@ hermes config set display.language en
 This pack translates static UI text. To have the agent answer in Catalan, also ask it to do so in
 your instructions. Tool output, logs and slash-command names are not translated by language packs.
 
-## Coverage · version 0.1.3
+## Coverage · version 0.1.4
 
 | Surface | Translated keys | English reference keys | Coverage |
 | --- | ---: | ---: | ---: |
-| Core / CLI / gateway | 413 | 3,438 | 12.0% |
+| Core / CLI / gateway | 415 | 3,438 | 12.1% |
 | TUI | 254 | 1,301 | 19.5% |
 | Desktop | 699 | 5,065 | 13.8% |
-| **Total** | **1,366** | **9,804** | **13.9%** |
+| **Total** | **1,368** | **9,804** | **14.0%** |
 
 Counts refer to Hermes revision `74f77ab9b04c502aa7ee0999346f05f027ea9b48`.
 Version 0.1.1 adds all current slash-command descriptions, `/help` text and section headings,
 and welcome/shutdown messages. Version 0.1.2 adds the first 48 startup tips and all 11 empty-input
 example prompts; the remaining startup tips still fall back to English. Version 0.1.3 translates
 the exit summary and session-resume hint. User-supplied session titles keep their original text.
+Version 0.1.4 adds the `agent.max_turns` startup tip and translates the CLI's `Tip:` prefix.
 The pack also covers approvals, common actions, session navigation,
 status messages, voice controls and tool activity. A matching key means the translation is recognized; these counts
 do not imply that a whole screen or workflow has been translated.

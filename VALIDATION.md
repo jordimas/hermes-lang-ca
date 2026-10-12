@@ -1,4 +1,4 @@
-# Validation · 0.1.3
+# Validation · 0.1.4
 
 Validated on 2026-10-11 against Hermes source revision
 `74f77ab9b04c502aa7ee0999346f05f027ea9b48` (latest upstream snapshot at validation time).
@@ -13,7 +13,7 @@ HERMES_HOME=/tmp/hermes-ca-validation-home hermes plugins validate /tmp/hermes-l
 Result: **Validation passed**.
 
 - Manifest, version requirement and manifest-only language-pack loading accepted.
-- Core: 413 keys; all recognized.
+- Core: 415 keys; all recognized.
 - TUI: 254 keys; all recognized.
 - Desktop: 699 keys; all recognized.
 - No Python runtime dependencies or registered tools.
@@ -68,3 +68,7 @@ Version 0.1.3 adds five exit-summary keys, validated on 2026-10-12 against the s
 and the installed checkout. Formatted resume, session, title, duration and message-count strings
 were checked with representative values, preserving the supplied session ID, title and duration.
 Missing translations after this update: core 3,025; TUI 1,047; Desktop 4,366 (8,438 total).
+
+Version 0.1.4 adds `tips.t093` and `cli.tip_line`, validated on 2026-10-12 against the installed
+checkout. The composed startup message preserves `agent.max_turns: 1000` and the `{tip}` placeholder.
+Missing translations: core 3,023; TUI 1,047; Desktop 4,366 (8,436 total).
