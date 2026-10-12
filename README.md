@@ -15,10 +15,6 @@ hermes config set display.language ca
 Restart Hermes to load the pack. If needed, check whether `HERMES_LANGUAGE` overrides the setting.
 To switch back: `hermes config set display.language en`.
 
-### Security scan warnings
-
-Hermes may flag UI labels and help text mentioning sudo, SSH or API keys in `locales/`. These are translation data; the pack has no plugin entry point or install hooks. If the findings match these strings and you trust the source, answer `y` to continue installation. Keep security scanning enabled.
-
 The pack translates UI text. To get replies in Catalan, ask the agent in your instructions.
 Some built-in branding and non-text Desktop entries remain in English.
 
