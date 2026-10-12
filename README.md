@@ -1,8 +1,8 @@
 # Hermes Catalan language pack · Català
 
 Catalan (`ca`) UI translations for [Hermes Agent](https://github.com/NousResearch/hermes-agent).
-This is an **initial, partial translation**, covering core/CLI and gateway messages, the terminal UI
-(TUI), and the Desktop app. Untranslated strings fall back to English.
+The pack covers every text-overridable key in the validated core/CLI and gateway catalogs,
+the terminal UI (TUI), and the Desktop app. See the coverage and runtime limitations below.
 
 ## Install
 
@@ -26,28 +26,32 @@ hermes config set display.language en
 This pack translates static UI text. To have the agent answer in Catalan, also ask it to do so in
 your instructions. Tool output, logs and slash-command names are not translated by language packs.
 
-## Coverage · version 0.1.4
+## Coverage · version 0.2.0
 
 | Surface | Translated keys | English reference keys | Coverage |
 | --- | ---: | ---: | ---: |
-| Core / CLI / gateway | 415 | 3,438 | 12.1% |
-| TUI | 254 | 1,301 | 19.5% |
-| Desktop | 699 | 5,065 | 13.8% |
-| **Total** | **1,368** | **9,804** | **14.0%** |
+| Core / CLI / gateway | 3,438 | 3,438 | 100% |
+| TUI | 1,301 | 1,301 | 100% |
+| Desktop | 5,061 | 5,065 | 99.92% |
+| **Total** | **9,800** | **9,804** | **99.96%** |
 
-Counts refer to Hermes revision `74f77ab9b04c502aa7ee0999346f05f027ea9b48`.
-Version 0.1.1 adds all current slash-command descriptions, `/help` text and section headings,
-and welcome/shutdown messages. Version 0.1.2 adds the first 48 startup tips and all 11 empty-input
-example prompts; the remaining startup tips still fall back to English. Version 0.1.3 translates
-the exit summary and session-resume hint. User-supplied session titles keep their original text.
-Version 0.1.4 adds the `agent.max_turns` startup tip and translates the CLI's `Tip:` prefix.
-The pack also covers approvals, common actions, session navigation,
-status messages, voice controls and tool activity. A matching key means the translation is recognized; these counts
-do not imply that a whole screen or workflow has been translated.
+Counts refer to the installed Hermes revision `c0ef5af5205dbdc25e9e44acd66873b4bb3503c9`.
+Version 0.2.0 adds 8,432 catalog entries. All 9,800 text-overridable keys are supplied, including
+all startup tips, approval labels, configuration labels, billing screens and exit summaries.
+Command syntax, accepted input keywords, product names and technical symbols retain their original
+spelling. User-supplied session titles and other dynamic content keep their original text.
+
+Four Desktop keys cannot be represented by a text-only pack: `composer.followUpPlaceholders` and
+`composer.newSessionPlaceholders` are lists, `intro.custom` returns a list, and
+`sidebar.projects.branchOff` returns an object. They deliberately retain their bundled values;
+overriding them with strings would change their types and break the interface. The full key export
+currently counts these alongside text keys.
 
 Hermes' built-in CLI skins currently override the translated `/help` title and welcome/goodbye
 text with English branding. The startup banner also contains hardcoded English labels. A language
 pack cannot override those; `/help` section headings and command descriptions use the translations.
+CLI autocomplete can also retain descriptions rendered before the pack loads; see
+[Hermes issue #136743](https://github.com/NousResearch/hermes-agent/issues/136743).
 
 ## Layout
 
@@ -56,8 +60,9 @@ plugin.yaml                Language declaration: ca / Català / left-to-right
 locales/ca.yaml             Core, CLI and gateway
 locales/ca.tui.yaml         Terminal UI
 locales/ca.desktop.yaml     Desktop
-reference/en.tui.json       English references for the translated TUI keys
-reference/en.desktop.json   English references for the translated Desktop keys
+reference/en.core.json      English core reference snapshot
+reference/en.tui.json       English TUI reference snapshot
+reference/en.desktop.json   English Desktop text reference snapshot
 scripts/check.py           Contributor validation utility
 ```
 
@@ -67,12 +72,13 @@ The Python check script and English reference snapshots are contributor resource
 
 ## Contributing
 
-Translate values, keeping keys unchanged. Partial additions are welcome.
+Translate values, keeping keys unchanged. New upstream keys and translation corrections are welcome.
 
 - Preserve Python placeholders such as `{count}` and positional TUI/Desktop placeholders such as
   `{0}` and `{1}`, including repeated occurrences.
 - Preserve command names, flags, URLs, configuration keys and parser-sensitive tokens. Approval
-  choice menus and accepted input lists currently use the English fallback deliberately.
+  menus translate their descriptions while retaining the accepted shortcut letters. Accepted input
+  lists retain the English tokens that Hermes parses.
 - Keep all YAML leaves as strings. Quote YAML reserved words and numeric-looking values.
 - Keep line breaks used by the original message.
 - When adding TUI/Desktop keys, update the corresponding English reference snapshot from the
@@ -89,7 +95,7 @@ The additional check verifies known keys, text values, placeholder multiplicity 
 ```bash
 /path/to/hermes-agent/scripts/run-in-hermes-env python3 \
   /path/to/hermes-lang-ca/scripts/check.py \
-  --hermes-source /path/to/hermes-agent
+  --hermes-source /path/to/hermes-agent --require-complete
 ```
 
 See [VALIDATION.md](VALIDATION.md) for release checks and the
@@ -97,13 +103,15 @@ See [VALIDATION.md](VALIDATION.md) for release checks and the
 for the plugin format.
 
 To audit every available key and export complete lists of missing translations, add
-`--missing-dir /tmp/hermes-ca-missing` to the check command above. Validation checks translation
-correctness; it does not require full coverage.
+`--missing-dir /tmp/hermes-ca-missing` to the check command above. `--require-complete` fails when
+any supported text key is missing; the four non-text Desktop keys are reported separately.
 
 ## Instal·lació en català
 
 Aquest paquet afegeix **Català** a les llengües de la interfície de Hermes.
-La versió inicial és parcial: les cadenes que encara no s’han traduït es mostren en anglès.
+La versió 0.2.0 cobreix totes les claus de text dels catàlegs validats. Quatre claus de Desktop
+que contenen llistes o objectes es conserven sense substituir-les per text. Alguns textos imposats
+pels temes de Hermes encara poden aparèixer en anglès; vegeu les limitacions descrites més amunt.
 
 ```bash
 hermes plugins install https://github.com/jordimas/hermes-lang-ca

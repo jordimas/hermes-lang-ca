@@ -11,11 +11,27 @@ import re
 import sys
 
 
+# The Desktop key export includes arrays and object-returning functions. The
+# text-only pack adapter would replace their shapes with strings and break UI.
+NON_TEXT_KEYS = {
+    'desktop': {
+        'composer.followUpPlaceholders',
+        'composer.newSessionPlaceholders',
+        'intro.custom',
+        'sidebar.projects.branchOff',
+    },
+}
+PLACEHOLDERS = re.compile(
+    r'\{(?:[A-Za-z_][A-Za-z_0-9]*|[0-9]+)(?:![ars])?(?::[^{}]*)?\}')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--hermes-source', type=Path, required=True)
     parser.add_argument('--missing-dir', type=Path,
                         help='Write complete missing-key lists for all three surfaces to this directory')
+    parser.add_argument('--require-complete', action='store_true',
+                        help='Fail if any text-overridable key lacks a translation')
     args = parser.parse_args()
     source = args.hermes_source.resolve()
     sys.path.insert(0, str(source))
@@ -46,13 +62,20 @@ def main():
                 failures.append(f'{file.name}: missing English reference for {key}')
                 continue
             # A multiset also detects accidental duplicated or dropped arguments.
-            placeholders = lambda s: Counter(re.findall(r'\{[A-Za-z_][A-Za-z_0-9]*\}|\{[0-9]+\}', s))
+            placeholders = lambda s: Counter(PLACEHOLDERS.findall(s))
             if placeholders(text) != placeholders(english[key]):
                 failures.append(f'{file.name}: placeholder mismatch at {key}')
-            if '\n' in english[key] and text.count('\n') != english[key].count('\n'):
+            if text.count('\n') != english[key].count('\n'):
                 failures.append(f'{file.name}: newline mismatch at {key}')
+            if key in NON_TEXT_KEYS.get(surface, set()):
+                failures.append(f'{file.name}: {key} cannot safely be overridden with text')
         missing = sorted(known - set(catalog))
-        print(f'{surface}: {len(set(catalog) & known)} / {len(known)} keys; {len(missing)} missing')
+        unsupported = set(missing) & NON_TEXT_KEYS.get(surface, set())
+        untranslated = set(missing) - unsupported
+        print(f'{surface}: {len(set(catalog) & known)} / {len(known)} keys; '
+              f'{len(untranslated)} untranslated; {len(unsupported)} non-text keys')
+        if args.require_complete and untranslated:
+            failures.append(f'{file.name}: {len(untranslated)} text keys have no translation')
         if args.missing_dir:
             args.missing_dir.mkdir(parents=True, exist_ok=True)
             (args.missing_dir / f'missing.{surface}.json').write_text(

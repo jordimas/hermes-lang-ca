@@ -1,74 +1,64 @@
-# Validation · 0.1.4
+# Validation · 0.2.0
 
-Validated on 2026-10-11 against Hermes source revision
-`74f77ab9b04c502aa7ee0999346f05f027ea9b48` (latest upstream snapshot at validation time).
-Also checked against the installed Hermes revision `c0ef5af5205dbdc25e9e44acd66873b4bb3503c9`.
+Validated on 2026-10-12 against the installed Hermes source revision
+`c0ef5af5205dbdc25e9e44acd66873b4bb3503c9`. The English core catalog and exported key sets also
+match the previously downloaded upstream snapshot `74f77ab9b04c502aa7ee0999346f05f027ea9b48`.
 
-## Hermes plugin validation
+## Coverage
+
+| Surface | Supplied text keys | Available text keys | Non-text keys omitted |
+| --- | ---: | ---: | ---: |
+| Core / CLI / gateway | 3,438 | 3,438 | 0 |
+| TUI | 1,301 | 1,301 | 0 |
+| Desktop | 5,061 | 5,061 | 4 |
+| Total | 9,800 | 9,800 | 4 |
+
+No supported text keys are missing. Accepted input lists, executable snippets, product names and
+technical symbols keep their original spelling; having an entry does not mean those tokens change.
+
+The Desktop export also lists these values, which its text-only override adapter cannot preserve:
+
+- `composer.followUpPlaceholders`: array of example prompts.
+- `composer.newSessionPlaceholders`: array of example prompts.
+- `intro.custom`: function returning an array.
+- `sidebar.projects.branchOff`: function returning `{before, after}`.
+
+They deliberately retain their bundled values. A string override would break their callers.
+
+## Catalog validation
 
 ```bash
-HERMES_HOME=/tmp/hermes-ca-validation-home hermes plugins validate /tmp/hermes-lang-ca
+python3 scripts/check.py --hermes-source /path/to/hermes-agent --require-complete
+hermes plugins validate /path/to/hermes-lang-ca
 ```
 
-Result: **Validation passed**.
+Both checks pass. All catalogs parse as text-only mappings with recognized keys and matching
+placeholder multisets, including format specifiers and repeated arguments. Newline counts match.
+The coverage gate rejects missing text entries and rejects overrides of the four non-text keys.
+Full English references are included for reproducible translation maintenance.
 
-- Manifest, version requirement and manifest-only language-pack loading accepted.
-- Core: 415 keys; all recognized.
-- TUI: 254 keys; all recognized.
-- Desktop: 699 keys; all recognized.
-- No Python runtime dependencies or registered tools.
-- No runtime Python entry point; capability probe skipped as expected.
-- Security scan cautions concern the literal word `sudo` in English UI reference strings.
-  These are text references to password prompts, not executable commands.
+The newly added translations were generated and proofread with a language model, followed by
+manual corrections and representative spot checks. Commands, flags, URLs, code in backticks,
+environment variables, shortcut letters and leading/trailing whitespace were checked separately.
+Existing translations were retained. This is not an independent human linguistic review.
 
-## Catalog checks
+## Runtime checks
 
-```bash
-python3 scripts/check.py --hermes-source /path/to/hermes-agent
-```
+A temporary Hermes profile loads the manifest-only plugin through real plugin discovery. Checks
+cover language selection, core translation formatting, all slash-command descriptions, `/help`,
+startup tips, approval menus, exit summaries and both frontend catalogs.
 
-Result: all catalogs contain text values, recognized keys, matching placeholder multisets and
-matching newline counts. Coverage is partial; see README.md for the denominators.
+The real shared frontend adapter (`unflattenMessages`, `adaptStringOverrides`, `mergeTranslations`) merges
+the complete TUI and Desktop catalogs. Supplied static entries retain string values and supplied
+function entries remain callable with positional arguments. The four non-text Desktop entries
+retain their original types and values.
 
-## Runtime smoke check
+No interactive Desktop or TUI rendering was tested. Hermes' built-in CLI skin branding can still
+override translated welcome/help/goodbye strings; startup banner labels also include hardcoded
+English. CLI autocomplete can retain an early English snapshot (upstream issue
+[#136743](https://github.com/NousResearch/hermes-agent/issues/136743)). These require changes in
+Hermes itself and cannot be fixed by adding catalog entries.
 
-A separate temporary Hermes home, containing a copy of this plugin and a config enabling it, was
-loaded through the real `hermes_cli.plugins.PluginManager.discover_and_load()` path, with real
-imports and no loader mocks. Verified:
-
-- The manifest-only plugin loads and `ca` becomes selectable as **Català**.
-- Loading the plugin alone leaves the display language in English.
-- `approval.denied` renders as `      ✗ Denegat`.
-- `gateway.model.switched` formats the supplied model name correctly in Catalan.
-- An untranslated approval-choice menu falls back to the English catalog unchanged.
-- The TUI catalog serves `status.ready: preparat`.
-- The Desktop catalog serves `common.save: Desa`.
-- Setting `display.language: ca` selects Catalan.
-- Unloading the plugin removes the registered language.
-
-For 0.1.1, an isolated temporary profile was used to load the updated pack and call the real
-`CLIInfoMixin.show_help()` renderer against both the upstream snapshot and the installed checkout.
-Verified all English `slash.*` and `cli.help.*` keys have Catalan translations, every registry
-command resolves a translated description, and rendered help includes `Sessió`, `Configuració`,
-`Inicia una sessió nova`, translated usage suffixes and hints. Parser-sensitive approval menus
-still fall back to English. The built-in skin still overrides the help title with
-`Available Commands`; this limitation is documented in README.md.
-
-For 0.1.2, all three catalogs were audited against the latest snapshot using
-`scripts/check.py --hermes-source /path/to/hermes-agent --missing-dir /tmp/hermes-ca-missing`.
-Missing translations: core 3,030; TUI 1,047; Desktop 4,366 (8,443 total).
-All translated keys are recognized. The package is partial, not a complete translation.
-The first 48 startup tips and all 11 input examples are now translated, including
-`tips.t027` (`/insights`) and `tips.placeholder.p08` (the to-do list example).
-
-No interactive Desktop or TUI rendering was tested. The translation has not received an independent
-linguistic review and is not a complete localization.
-
-Version 0.1.3 adds five exit-summary keys, validated on 2026-10-12 against the same snapshot
-and the installed checkout. Formatted resume, session, title, duration and message-count strings
-were checked with representative values, preserving the supplied session ID, title and duration.
-Missing translations after this update: core 3,025; TUI 1,047; Desktop 4,366 (8,438 total).
-
-Version 0.1.4 adds `tips.t093` and `cli.tip_line`, validated on 2026-10-12 against the installed
-checkout. The composed startup message preserves `agent.max_turns: 1000` and the `{tip}` placeholder.
-Missing translations: core 3,023; TUI 1,047; Desktop 4,366 (8,436 total).
+The plugin registers no Python code, runtime dependencies or tools. Security-scan cautions about
+`sudo` or command examples concern UI text, not executable plugin code. All translation/export/
+proofreading scripts and batch results stayed in `/tmp` and are not published with the pack.

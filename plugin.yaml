@@ -1,6 +1,6 @@
 name: hermes-lang-ca
-version: 0.1.4
-description: "Catalan (Català) language pack for Hermes Agent. Initial partial translation for core, TUI and Desktop; missing strings fall back to English. Text-only catalogs, no Python plugin code or network access."
+version: 0.2.0
+description: "Catalan (Català) language pack for Hermes Agent. Covers all text-overridable core, TUI and Desktop catalog keys; preserves command syntax and non-text Desktop values. Text-only catalogs, no Python plugin code or network access."
 requires_hermes: ">=0.21.6"
 provides_locales:
   - id: ca
